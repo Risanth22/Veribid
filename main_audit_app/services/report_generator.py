@@ -95,12 +95,12 @@ def generate_pdf_report(submission_record, verification_result):
     if logo_path.exists():
         try:
             from reportlab.platypus import Image as RLImage
-            logo_img = RLImage(str(logo_path), width=50, height=50)
+            logo_img = RLImage(str(logo_path), width=100, height=45)
             title_paras = [
                 Paragraph("AI BID & COMPANY COMPLIANCE VERIFICATION SYSTEM", header_title_style),
                 Paragraph("OFFICIAL COMPLIANCE AUDIT & VERIFICATION REPORT &bull; STRICT CONFIDENTIAL", header_sub_style)
             ]
-            header_table = Table([[logo_img, title_paras]], colWidths=[60, 480])
+            header_table = Table([[logo_img, title_paras]], colWidths=[110, 430])
             header_table.setStyle(TableStyle([
                 ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
                 ('LEFTPADDING', (0,0), (-1,-1), 0),
