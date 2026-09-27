@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block title %}{% if is_edit %}Edit {{ company.company_name }}{% else %}Add Reference Company{% endif %}{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3" style="max-width: 1040px;">
+  <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+    <div>
+      <h4 class="fw-bold mb-0">{% if is_edit %}Edit Reference Company: {{ company.company_name }}{% else %}Add Reference Company{% endif %}</h4>
+      <small class="text-muted">Enter trusted organization details used as ground truth for audits.</small>
+    </div>
+    <a href="{{ url_for('portal_ui.companies_list') }}" class="btn btn-outline-secondary btn-sm">
+      Cancel
+    </a>
+  </div>
+
+  <form method="POST">
+    <div class="row g-3">
+      <!-- Legal / General Information -->
+      <div class="col-lg-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <span>Organization Identifiers</span>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Legal Company Name <span class="text-danger">*</span></label>
+              <input type="text" name="company_name" class="form-control form-control-sm" value="{{ company.company_name if company else '' }}" placeholder="e.g. ABC Technologies Pvt Ltd" required>
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">GSTIN <span class="text-danger">*</span></label>
+                <input type="text" name="gstin" class="form-control form-control-sm text-uppercase font-monospace" value="{{ company.gstin if company else '' }}" placeholder="33ABCDE1234F1Z5" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">CIN <span class="text-danger">*</span></label>
+                <input type="text" name="cin" class="form-control form-control-sm text-uppercase font-monospace" value="{{ company.cin if company else '' }}" placeholder="U12345TN2020PTC123456" required>
+              </div>
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Registration Number</label>
+                <input type="text" name="registration_number" class="form-control form-control-sm" value="{{ company.registration_number if company else '' }}" placeholder="REG-TN-2020-0981">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Experience (Years)</label>
+                <input type="number" name="experience_years" class="form-control form-control-sm" value="{{ company.experience_years if company else 0 }}" min="0">
+              </div>
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Contact Email</label>
+                <input type="email" name="contact_email" class="form-control form-control-sm" value="{{ company.contact_email if company else '' }}" placeholder="contact@company.com">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Contact Phone</label>
+                <input type="text" name="contact_phone" class="form-control form-control-sm" value="{{ company.contact_phone if company else '' }}" placeholder="+91-00-00000000">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Registered Address</label>
+              <textarea name="address" class="form-control form-control-sm" rows="2" placeholder="Registered office address...">{{ company.address if company else '' }}</textarea>
+            </div>
+
+            <div>
+              <label class="form-label small fw-semibold">Compliance Status</label>
+              <select name="status" class="form-select form-select-sm">
+                <option value="APPROVED" {% if company and company.status == 'APPROVED' %}selected{% endif %}>APPROVED</option>
+                <option value="UNDER_REVIEW" {% if company and company.status == 'UNDER_REVIEW' %}selected{% endif %}>UNDER REVIEW</option>
+                <option value="SUSPENDED" {% if company and company.status == 'SUSPENDED' %}selected{% endif %}>SUSPENDED</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products & Certificates -->
+      <div class="col-lg-6">
+        <!-- Products -->
+        <div class="card mb-3">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span>Approved Products</span>
+            <button type="button" class="btn btn-outline-primary btn-sm py-0 px-2" onclick="addProductRow()">+ Add Product</button>
+          </div>
+          <div class="card-body p-2" id="products-container">
+            {% if company and company.products %}
+              {% for prod in company.products %}
+                <div class="p-2 border rounded bg-light mb-2 product-row">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="small fw-semibold">Product Entry</span>
+                    <button type="button" class="btn btn-link btn-sm text-danger p-0" onclick="this.closest('.product-row').remove()"><i class="fa-solid fa-trash small"></i></button>
+                  </div>
+                  <input type="text" name="product_name[]" class="form-control form-control-sm mb-1" placeholder="Product Name" value="{{ prod.name }}" required>
+                  <input type="text" name="product_spec[]" class="form-control form-control-sm" placeholder="Specifications" value="{{ prod.specs }}">
+                </div>
+              {% endfor %}
+            {% else %}
+              <div class="p-2 border rounded bg-light mb-2 product-row">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="small fw-semibold">Product 1</span>
+                  <button type="button" class="btn btn-link btn-sm text-danger p-0" onclick="this.closest('.product-row').remove()"><i class="fa-solid fa-trash small"></i></button>
+                </div>
+                <input type="text" name="product_name[]" class="form-control form-control-sm mb-1" placeholder="Product Name (e.g. Industrial Router)" required>
+                <input type="text" name="product_spec[]" class="form-control form-control-sm" placeholder="Specifications (e.g. Operating temp -10°C to 60°C)">
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="card mb-3">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span>Reference Certificates</span>
+            <button type="button" class="btn btn-outline-primary btn-sm py-0 px-2" onclick="addCertRow()">+ Add Certificate</button>
+          </div>
+          <div class="card-body p-2" id="certificates-container">
+            {% if company and company.certificates %}
+              {% for cert in company.certificates %}
+                <div class="p-2 border rounded bg-light mb-2 cert-row">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="small fw-semibold">Certificate Entry</span>
+                    <button type="button" class="btn btn-link btn-sm text-danger p-0" onclick="this.closest('.cert-row').remove()"><i class="fa-solid fa-trash small"></i></button>
+                  </div>
+                  <div class="row g-1 mb-1">
+                    <div class="col-6">
+                      <input type="text" name="cert_name[]" class="form-control form-control-sm" placeholder="Name (e.g. ISO 9001)" value="{{ cert.name }}" required>
+                    </div>
+                    <div class="col-6">
+                      <input type="text" name="cert_number[]" class="form-control form-control-sm" placeholder="Number (e.g. ISO123456)" value="{{ cert.certificate_number }}" required>
+                    </div>
+                  </div>
+                  <input type="date" name="cert_valid_until[]" class="form-control form-control-sm" value="{{ cert.valid_until }}">
+                </div>
+              {% endfor %}
+            {% else %}
+              <div class="p-2 border rounded bg-light mb-2 cert-row">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="small fw-semibold">Certificate 1</span>
+                  <button type="button" class="btn btn-link btn-sm text-danger p-0" onclick="this.closest('.cert-row').remove()"><i class="fa-solid fa-trash small"></i></button>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-6">
+                    <input type="text" name="cert_name[]" class="form-control form-control-sm" placeholder="Name (e.g. ISO 9001)" required>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" name="cert_number[]" class="form-control form-control-sm" placeholder="Number (e.g. ISO123456)" required>
+                  </div>
+                </div>
+                <input type="date" name="cert_valid_until[]" class="form-control form-control-sm">
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="col-12 text-end">
+        <a href="{{ url_for('portal_ui.companies_list') }}" class="btn btn-outline-secondary btn-sm me-2">Cancel</a>
+        <button type="submit" class="btn btn-primary btn-sm px-3">
+          Save Company Record
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function addProductRow() {
+  const container = document.getElementById('products-container');
+  const div = document.createElement('div');
+  div.className = 'p-2 border rounded bg-light mb-2 product-row';
+  div.innerHTML = `
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <span class="small fw-semibold">New Product</span>
+      <button type="button" class="btn btn-link btn-sm text-danger p-0" onclick="this.closest('.product-row').remove()"><i class="fa-solid fa-trash small"></i></button>
+    </div>
+    <input type="text" name="product_name[]" class="form-control form-control-sm mb-1" placeholder="Product Name" required>
+    <input type="text" name="product_spec[]" class="form-control form-control-sm" placeholder="Specifications">
+  `;
+  container.appendChild(div);
+}
+
+function addCertRow() {
+  const container = document.getElementById('certificates-container');
+  const div = document.createElement('div');
+  div.className = 'p-2 border rounded bg-light mb-2 cert-row';
+  div.innerHTML = `
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <span class="small fw-semibold">New Certificate</span>
+      <button type="button" class="btn btn-link btn-sm text-danger p-0" onclick="this.closest('.cert-row').remove()"><i class="fa-solid fa-trash small"></i></button>
+    </div>
+    <div class="row g-1 mb-1">
+      <div class="col-6">
+        <input type="text" name="cert_name[]" class="form-control form-control-sm" placeholder="Name (e.g. ISO 9001)" required>
+      </div>
+      <div class="col-6">
+        <input type="text" name="cert_number[]" class="form-control form-control-sm" placeholder="Number" required>
+      </div>
+    </div>
+    <input type="date" name="cert_valid_until[]" class="form-control form-control-sm">
+  `;
+  container.appendChild(div);
+}
+</script>
+{% endblock %}

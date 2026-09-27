@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+
+{% block title %}{{ company.company_name }} - Reference Profile{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3">
+  <!-- Header -->
+  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-2 border-bottom">
+    <div>
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <a href="{{ url_for('portal_ui.companies_list') }}" class="btn btn-outline-secondary btn-sm py-0 px-2">
+          &larr; Companies
+        </a>
+        <code class="fw-bold">{{ company.company_id }}</code>
+        {% if company.status == 'APPROVED' %}
+          <span class="badge bg-success">APPROVED</span>
+        {% elif company.status == 'UNDER_REVIEW' %}
+          <span class="badge bg-warning text-dark">REVIEW</span>
+        {% else %}
+          <span class="badge bg-danger">{{ company.status }}</span>
+        {% endif %}
+      </div>
+      <h4 class="fw-bold mb-0">{{ company.company_name }}</h4>
+    </div>
+    <div class="d-flex gap-2">
+      <a href="{{ url_for('portal_ui.company_edit', company_id=company.company_id) }}" class="btn btn-primary btn-sm">
+        <i class="fa-solid fa-pen me-1"></i> Edit Details
+      </a>
+      <a href="{{ url_for('reference_api.get_company', company_identifier=company.company_id) }}" target="_blank" class="btn btn-outline-secondary btn-sm">
+        <i class="fa-solid fa-code me-1"></i> JSON API
+      </a>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <!-- Left Column: Details & Products -->
+    <div class="col-lg-7">
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span>Company Registration & Identifiers</span>
+          <form method="POST" action="{{ url_for('portal_ui.update_status', company_id=company.company_id) }}" class="d-inline-flex gap-1 align-items-center">
+            <span class="small text-muted me-1">Status:</span>
+            <select name="status" class="form-select form-select-sm" onchange="this.form.submit()">
+              <option value="APPROVED" {% if company.status == 'APPROVED' %}selected{% endif %}>APPROVED</option>
+              <option value="UNDER_REVIEW" {% if company.status == 'UNDER_REVIEW' %}selected{% endif %}>UNDER REVIEW</option>
+              <option value="SUSPENDED" {% if company.status == 'SUSPENDED' %}selected{% endif %}>SUSPENDED</option>
+            </select>
+          </form>
+        </div>
+        <div class="card-body">
+          <div class="row g-2 small">
+            <div class="col-sm-6">
+              <label class="text-muted text-uppercase fw-semibold">GSTIN</label>
+              <div><code>{{ company.gstin or 'N/A' }}</code></div>
+            </div>
+            <div class="col-sm-6">
+              <label class="text-muted text-uppercase fw-semibold">CIN</label>
+              <div><code>{{ company.cin or 'N/A' }}</code></div>
+            </div>
+            <div class="col-sm-6">
+              <label class="text-muted text-uppercase fw-semibold">Registration Number</label>
+              <div>{{ company.registration_number or 'N/A' }}</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="text-muted text-uppercase fw-semibold">Registered Experience</label>
+              <div>{{ company.experience_years or 0 }} Years</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="text-muted text-uppercase fw-semibold">Contact Email</label>
+              <div>{{ company.contact_email or 'N/A' }}</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="text-muted text-uppercase fw-semibold">Contact Phone</label>
+              <div>{{ company.contact_phone or 'N/A' }}</div>
+            </div>
+            <div class="col-12 mt-2">
+              <label class="text-muted text-uppercase fw-semibold">Registered Address</label>
+              <div class="text-secondary">{{ company.address or 'N/A' }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <span>Catalog Products & Specifications</span>
+        </div>
+        <div class="card-body p-0">
+          {% if company.products %}
+            <div class="list-group list-group-flush">
+              {% for prod in company.products %}
+                <div class="list-group-item p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <strong class="text-primary">{{ prod.name }}</strong>
+                    {% if prod.model %}<span class="badge bg-light text-dark border">Model: {{ prod.model }}</span>{% endif %}
+                  </div>
+                  <div class="small text-secondary mb-1">
+                    <strong>Specs:</strong> {{ prod.specs or 'Standard specifications' }}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="p-3 text-muted small">No products registered.</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Certificates & Documents -->
+    <div class="col-lg-5">
+      <!-- Certificates -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <span>Reference Certificates</span>
+        </div>
+        <div class="card-body p-3">
+          {% if company.certificates %}
+            <div class="d-flex flex-column gap-2">
+              {% for cert in company.certificates %}
+                <div class="border rounded p-2 bg-light small">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <strong class="text-dark">{{ cert.name }}</strong>
+                    <span class="badge bg-success">{{ cert.status or 'ACTIVE' }}</span>
+                  </div>
+                  <div><strong>Number:</strong> <code>{{ cert.certificate_number }}</code></div>
+                  {% if cert.valid_until %}
+                    <div><strong>Valid Until:</strong> {{ cert.valid_until }}</div>
+                  {% endif %}
+                  {% if cert.reference_file %}
+                    <div class="mt-1">
+                      <a href="{{ url_for('reference_api.download_reference_document', filename=cert.reference_file) }}" target="_blank" class="btn btn-outline-danger btn-sm py-0 px-2">
+                        View File
+                      </a>
+                    </div>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="text-muted small">No certificates listed.</div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Uploaded Reference Documents -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span>Reference Documents</span>
+          <button class="btn btn-outline-primary btn-sm py-0 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#uploadBox">
+            + Upload
+          </button>
+        </div>
+
+        <div class="collapse p-3 bg-light border-bottom" id="uploadBox">
+          <form method="POST" action="{{ url_for('portal_ui.upload_reference_document', company_id=company.company_id) }}" enctype="multipart/form-data">
+            <div class="mb-2">
+              <label class="form-label small fw-semibold">Document Title</label>
+              <input type="text" name="document_type" class="form-control form-control-sm" placeholder="e.g. GST Registration Certificate" required>
+            </div>
+            <div class="mb-2">
+              <label class="form-label small fw-semibold">Select File</label>
+              <input type="file" name="document_file" class="form-control form-control-sm" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm w-100">Upload to Repository</button>
+          </form>
+        </div>
+
+        <div class="card-body p-2">
+          {% if company.documents %}
+            <ul class="list-group list-group-flush small">
+              {% for doc in company.documents %}
+                <li class="list-group-item d-flex justify-content-between align-items-center px-2 py-1">
+                  <div>
+                    <i class="fa-solid fa-file-pdf text-danger me-1"></i>
+                    <span>{{ doc.name }}</span>
+                  </div>
+                  <a href="{{ url_for('reference_api.download_reference_document', filename=doc.reference_file) }}" target="_blank" class="btn btn-link btn-sm py-0 px-1 text-decoration-none">
+                    Download
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <div class="text-muted small p-2">No reference documents uploaded.</div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- REST API Helper -->
+      <div class="card bg-light">
+        <div class="card-body p-2 small">
+          <div class="fw-semibold text-secondary mb-1">REST API Endpoints:</div>
+          <div class="code-box mb-1 py-1 px-2">GET /api/reference/company/{{ company.company_id }}</div>
+          <div class="code-box py-1 px-2">GET /api/reference/company/{{ company.gstin }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

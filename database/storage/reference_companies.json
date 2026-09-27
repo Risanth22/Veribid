@@ -1,0 +1,127 @@
+[
+  {
+    "company_id": "COMP-001",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "registration_number": "REG-TN-2020-0981",
+    "contact_email": "tenders@abctechnologies.com",
+    "contact_phone": "+91-44-28394012",
+    "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+    "status": "APPROVED",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": "Networking",
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+      },
+      {
+        "name": "Network Switch",
+        "model": "NS-24G",
+        "category": "Networking",
+        "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001",
+        "certificate_number": "ISO123456",
+        "issuing_body": "Global Quality Registrar (GQR)",
+        "issue_date": "2022-08-16",
+        "valid_until": "2027-08-15",
+        "reference_file": "abc_iso_9001.pdf",
+        "status": "ACTIVE"
+      }
+    ],
+    "documents": [
+      {
+        "name": "GST Certificate",
+        "reference_file": "abc_gst_certificate.pdf",
+        "verified": true
+      },
+      {
+        "name": "Technical Specification Sheet",
+        "reference_file": "abc_tech_spec.pdf",
+        "verified": true
+      }
+    ],
+    "experience_years": 5,
+    "eligibility_status": "COMPLIANT",
+    "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6"
+  },
+  {
+    "company_id": "COMP-002",
+    "company_name": "Apex Global Solutions Ltd",
+    "gstin": "27AAACA9999P1Z3",
+    "cin": "L98765MH2015PLC654321",
+    "registration_number": "REG-MH-2015-4412",
+    "contact_email": "compliance@apexglobal.in",
+    "contact_phone": "+91-22-67891234",
+    "address": "1204 Nariman Point, Mumbai, Maharashtra 400021",
+    "status": "APPROVED",
+    "products": [
+      {
+        "name": "Surveillance Camera",
+        "model": "SC-4K",
+        "category": "Security Hardware",
+        "specs": "4K Ultra-HD Weatherproof IP Camera with IR Night Vision up to 50m"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001",
+        "certificate_number": "ISO-REF-88442",
+        "issuing_body": "TUV Certification Agency",
+        "issue_date": "2020-05-21",
+        "valid_until": "2025-05-20",
+        "reference_file": "apex_iso_9001.pdf",
+        "status": "ACTIVE"
+      }
+    ],
+    "documents": [
+      {
+        "name": "GST Certificate",
+        "reference_file": "apex_gst_certificate.pdf",
+        "verified": true
+      }
+    ],
+    "experience_years": 8,
+    "eligibility_status": "COMPLIANT",
+    "_id": "f8ef4af5-956e-4b0a-9258-14cb202db82f"
+  },
+  {
+    "company_id": "COMP-003",
+    "company_name": "Dhoni pvt ltd",
+    "gstin": "SDNNBHJKIP45678",
+    "cin": "DEFMRM5645N5",
+    "registration_number": "Reg-tn-34",
+    "status": "APPROVED",
+    "contact_email": "risanth5566@gmail.com",
+    "contact_phone": "+919363659506",
+    "address": "11/25 A.K.E street-2,Tiruchengode",
+    "experience_years": 0,
+    "products": [
+      {
+        "name": "router",
+        "specs": "temp -10"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "Risanth S",
+        "certificate_number": "sfs",
+        "valid_until": "2030-05-20",
+        "status": "ACTIVE"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Gst",
+        "reference_file": "COMP-003_Chennai_Embedded_Systems_Correct_Input.pdf",
+        "verified": true
+      }
+    ],
+    "_id": "d286875d-a185-4cad-ae76-6e9fe0ef5573"
+  }
+]

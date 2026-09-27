@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Trusted Reference Companies{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3">
+  <!-- Header -->
+  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-2 border-bottom">
+    <div>
+      <h4 class="fw-bold mb-0" data-i18n="ref_companies_title">Trusted Reference Companies</h4>
+      <small class="text-muted" data-i18n="ref_companies_subtitle">Master database records used as the trusted reference for compliance checks.</small>
+    </div>
+    <div class="d-flex gap-2">
+      <a href="{{ url_for('portal_ui.company_create') }}" class="btn btn-primary btn-sm">
+        <i class="fa-solid fa-plus me-1"></i> <span data-i18n="nav_add_company">Add Company</span>
+      </a>
+      <a href="{{ url_for('portal_ui.api_docs') }}" class="btn btn-outline-secondary btn-sm">
+        <i class="fa-solid fa-code me-1"></i> <span data-i18n="nav_api_docs">REST API</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="card mb-3">
+    <div class="card-body p-2">
+      <form method="GET" action="{{ url_for('portal_ui.companies_list') }}" class="row g-2 align-items-center">
+        <div class="col-md-7">
+          <input type="text" name="q" value="{{ search_query }}" class="form-control form-control-sm" placeholder="Search by Company Name, GSTIN, CIN, or ID...">
+        </div>
+        <div class="col-md-3">
+          <select name="status" class="form-select form-select-sm">
+            <option value="" data-i18n="all_statuses">All Statuses</option>
+            <option value="APPROVED" {% if status_filter == 'APPROVED' %}selected{% endif %}>APPROVED</option>
+            <option value="UNDER_REVIEW" {% if status_filter == 'UNDER_REVIEW' %}selected{% endif %}>UNDER REVIEW</option>
+            <option value="SUSPENDED" {% if status_filter == 'SUSPENDED' %}selected{% endif %}>SUSPENDED</option>
+          </select>
+        </div>
+        <div class="col-md-2 d-flex gap-1">
+          <button type="submit" class="btn btn-secondary btn-sm w-100" data-i18n="btn_filter">Filter</button>
+          {% if search_query or status_filter %}
+            <a href="{{ url_for('portal_ui.companies_list') }}" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-rotate-left"></i></a>
+          {% endif %}
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table table-hover table-bordered mb-0">
+        <thead>
+          <tr>
+            <th>Company ID & Name</th>
+            <th>GSTIN</th>
+            <th>CIN</th>
+            <th>Status</th>
+            <th>Products</th>
+            <th>Certificates</th>
+            <th>Files</th>
+            <th class="text-end">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if companies %}
+            {% for comp in companies %}
+              <tr>
+                <td>
+                  <a href="{{ url_for('portal_ui.company_detail', company_id=comp.company_id) }}" class="fw-semibold text-primary text-decoration-none">
+                    {{ comp.company_name }}
+                  </a>
+                  <div class="text-muted small font-monospace">{{ comp.company_id }}</div>
+                </td>
+                <td><code>{{ comp.gstin }}</code></td>
+                <td><code>{{ comp.cin }}</code></td>
+                <td>
+                  {% if comp.status == 'APPROVED' %}
+                    <span class="badge bg-success">APPROVED</span>
+                  {% elif comp.status == 'UNDER_REVIEW' %}
+                    <span class="badge bg-warning text-dark">REVIEW</span>
+                  {% else %}
+                    <span class="badge bg-danger">{{ comp.status }}</span>
+                  {% endif %}
+                </td>
+                <td>{{ (comp.products | length) if comp.products else 0 }} item(s)</td>
+                <td>
+                  {% if comp.certificates %}
+                    {% for cert in comp.certificates %}
+                      <span class="badge bg-light text-dark border me-1">{{ cert.name }}</span>
+                    {% endfor %}
+                  {% else %}
+                    <span class="text-muted small">None</span>
+                  {% endif %}
+                </td>
+                <td>{{ (comp.documents | length) if comp.documents else 0 }} file(s)</td>
+                <td class="text-end">
+                  <a href="{{ url_for('portal_ui.company_detail', company_id=comp.company_id) }}" class="btn btn-outline-primary btn-sm py-0 px-2">View</a>
+                  <a href="{{ url_for('portal_ui.company_edit', company_id=comp.company_id) }}" class="btn btn-outline-secondary btn-sm py-0 px-2">Edit</a>
+                </td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr>
+              <td colspan="8" class="text-center py-4 text-muted">
+                No company records found. <a href="{{ url_for('portal_ui.company_create') }}">Add a new company</a>.
+              </td>
+            </tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

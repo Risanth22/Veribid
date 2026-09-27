@@ -1,0 +1,2517 @@
+[
+  {
+    "submission_id": "73917f0b-8f05-4a64-8d2b-a8de526fade5",
+    "audit_id": "AUDIT-ABC-MATCH-0842",
+    "tender_id": "TNDR-2026-IT-0049",
+    "tender_title": "Supply of Industrial Networking Hardware",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": null,
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001:2015",
+        "certificate_number": "ISO123456",
+        "issuing_body": "Global Quality Registrar (GQR)",
+        "valid_until": "2027-08-15",
+        "company_name_on_cert": "ABC Technologies Pvt Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": "-10\u00b0C to 60\u00b0C",
+      "ports": "5 Gigabit Ethernet Ports",
+      "power": "dual 9-36V DC redundant power input",
+      "summary": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+    },
+    "experience_years": 5,
+    "uploaded_documents": [
+      {
+        "filename": "ABC_Tech_Bid_Submission.pdf",
+        "original_name": "ABC_Tech_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\73917f0b-8f05-4a64-8d2b-a8de526fade5\\ABC_Tech_Bid_Submission.pdf",
+        "size": 2990
+      },
+      {
+        "filename": "ABC_Tech_ISO_Certificate.pdf",
+        "original_name": "ABC_Tech_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\73917f0b-8f05-4a64-8d2b-a8de526fade5\\ABC_Tech_ISO_Certificate.pdf",
+        "size": 2210
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T12:08:57.306265",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 12:08:57",
+    "_id": "31ce00fc-e1eb-4888-a214-df5f8610c2ab",
+    "verification_result": {
+      "identified": true,
+      "company_name": "ABC Technologies Pvt Ltd",
+      "reference_company": {
+        "company_id": "COMP-001",
+        "company_name": "ABC Technologies Pvt Ltd",
+        "gstin": "33ABCDE1234F1Z5",
+        "cin": "U12345TN2020PTC123456",
+        "registration_number": "REG-TN-2020-0981",
+        "contact_email": "tenders@abctechnologies.com",
+        "contact_phone": "+91-44-28394012",
+        "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+        "status": "APPROVED",
+        "products": [
+          {
+            "name": "Industrial Router",
+            "model": "IR-500",
+            "category": "Networking",
+            "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+          },
+          {
+            "name": "Network Switch",
+            "model": "NS-24G",
+            "category": "Networking",
+            "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+          }
+        ],
+        "certificates": [
+          {
+            "name": "ISO 9001",
+            "certificate_number": "ISO123456",
+            "issuing_body": "Global Quality Registrar (GQR)",
+            "issue_date": "2022-08-16",
+            "valid_until": "2027-08-15",
+            "reference_file": "abc_iso_9001.pdf",
+            "status": "ACTIVE"
+          }
+        ],
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "abc_gst_certificate.pdf",
+            "verified": true
+          },
+          {
+            "name": "Technical Specification Sheet",
+            "reference_file": "abc_tech_spec.pdf",
+            "verified": true
+          }
+        ],
+        "experience_years": 5,
+        "eligibility_status": "COMPLIANT",
+        "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "ABC Technologies Pvt Ltd",
+          "reference": "ABC Technologies Pvt Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "33ABCDE1234F1Z5",
+          "reference": "33ABCDE1234F1Z5",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "U12345TN2020PTC123456",
+          "reference": "U12345TN2020PTC123456",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "REG-TN-2020-0981",
+          "reference": "REG-TN-2020-0981",
+          "status": "MATCH",
+          "explanation": "Registration numbers match exactly.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "5 Years",
+          "reference": "5 Years",
+          "status": "MATCH",
+          "explanation": "Submitted experience of 5 years satisfies requirement (5 years registered).",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Industrial Router",
+          "category": "Products",
+          "submitted": "Industrial Router",
+          "reference": "Industrial Router",
+          "status": "MATCH",
+          "explanation": "Product 'Industrial Router' is approved in organization reference catalog.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Industrial Router)",
+          "category": "Specifications",
+          "submitted": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input.",
+          "reference": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (HIGH): The 'dual 9-36V DC redundant power input' described in the submitted specification is a common and fully compliant method for achieving '9-36V DC Redundant Power' as stated in the trusted reference.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "Product: Network Switch",
+          "category": "Products",
+          "submitted": "NOT OFFERED IN BID",
+          "reference": "Network Switch",
+          "status": "MISSING",
+          "explanation": "Required catalog product 'Network Switch' was not detected in vendor submission.",
+          "source_document": "Bid Submission",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO123456",
+          "reference": "ISO123456",
+          "status": "MATCH",
+          "explanation": "Certificate numbers match exactly (ISO123456).",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2027-08-15",
+          "reference": "2027-08-15",
+          "status": "MATCH",
+          "explanation": "Validity dates match (2027-08-15) and certificate is currently ACTIVE.",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        },
+        {
+          "field": "Document: Technical Specification Sheet",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_tech_spec.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'Technical Specification Sheet' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "ABC_Tech_ISO_Certificate.pdf",
+          "reference_file": "abc_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO123456",
+              "reference": "ISO123456",
+              "status": "MATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "ABC Technologies Pvt Ltd",
+              "reference": "ABC Technologies Pvt Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2027-08-15",
+              "reference": "2027-08-15",
+              "status": "MATCH"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 12,
+        "matched": 9,
+        "mismatched": 0,
+        "missing": 3,
+        "expired": 0,
+        "review": 0,
+        "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+      },
+      "ai_summary": "**Audit Summary: AUDIT-ABC-MATCH-0842**\n\nThe compliance audit for ABC Technologies Pvt Ltd (Audit ID: AUDIT-ABC-MATCH-0842) verified 9 out of 12 submitted items against reference data, demonstrating successful alignment across core company identifiers such as Legal Name, GSTIN, CIN, and Registration Number. Key product details for the Industrial Router, its technical specifications, and ISO 9001 certification number and validity date were also accurately matched. However, the bid presents critical discrepancies with three missing items: the 'Network Switch' product offering, and two mandatory documents \u2013 the GST Certificate and the Technical Specification Sheet \u2013 which were not uploaded. Due to the absence of these essential mandatory compliance and technical documents, this bid is unsuitable for clearance and requires immediate manual officer scrutiny."
+    },
+    "summary_stats": {
+      "total": 12,
+      "matched": 9,
+      "mismatched": 0,
+      "missing": 3,
+      "expired": 0,
+      "review": 0,
+      "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+    },
+    "ai_summary": "**Audit Summary: AUDIT-ABC-MATCH-0842**\n\nThe compliance audit for ABC Technologies Pvt Ltd (Audit ID: AUDIT-ABC-MATCH-0842) verified 9 out of 12 submitted items against reference data, demonstrating successful alignment across core company identifiers such as Legal Name, GSTIN, CIN, and Registration Number. Key product details for the Industrial Router, its technical specifications, and ISO 9001 certification number and validity date were also accurately matched. However, the bid presents critical discrepancies with three missing items: the 'Network Switch' product offering, and two mandatory documents \u2013 the GST Certificate and the Technical Specification Sheet \u2013 which were not uploaded. Due to the absence of these essential mandatory compliance and technical documents, this bid is unsuitable for clearance and requires immediate manual officer scrutiny.",
+    "report_file": "AUDIT-ABC-MATCH-0842_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "909d11c6-0671-4264-8585-532cb79757ed",
+    "audit_id": "AUDIT-APEX-MISMATCH-0920",
+    "tender_id": "TNDR-2026-SEC-0112",
+    "tender_title": "Municipal Security & Surveillance Equipment",
+    "company_name": "Apex Global Solutions Ltd",
+    "gstin": "27AAACA9999P1Z3",
+    "cin": "L98765MH2015PLC654321",
+    "products": [
+      {
+        "name": "Surveillance Camera",
+        "model": "SC-4K",
+        "category": "Security Equipment",
+        "specs": null
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001",
+        "certificate_number": "ISO999999",
+        "issuing_body": null,
+        "valid_until": "2024-01-01",
+        "company_name_on_cert": "Apex Global Solutions Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": null,
+      "ports": null,
+      "power": null,
+      "summary": "Offered Product: Surveillance Camera SC-4K for Municipal Security Equipment."
+    },
+    "experience_years": null,
+    "uploaded_documents": [
+      {
+        "filename": "Apex_Global_Bid_Submission.pdf",
+        "original_name": "Apex_Global_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\909d11c6-0671-4264-8585-532cb79757ed\\Apex_Global_Bid_Submission.pdf",
+        "size": 2797
+      },
+      {
+        "filename": "Apex_Global_ISO_Certificate.pdf",
+        "original_name": "Apex_Global_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\909d11c6-0671-4264-8585-532cb79757ed\\Apex_Global_ISO_Certificate.pdf",
+        "size": 2085
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T12:09:38.755124",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 12:09:38",
+    "_id": "c2cdbdfb-8ee9-4e55-9884-904d15093b97",
+    "verification_result": {
+      "identified": true,
+      "company_name": "Apex Global Solutions Ltd",
+      "reference_company": {
+        "company_id": "COMP-002",
+        "company_name": "Apex Global Solutions Ltd",
+        "gstin": "27AAACA9999P1Z3",
+        "cin": "L98765MH2015PLC654321",
+        "registration_number": "REG-MH-2015-4412",
+        "contact_email": "compliance@apexglobal.in",
+        "contact_phone": "+91-22-67891234",
+        "address": "1204 Nariman Point, Mumbai, Maharashtra 400021",
+        "status": "APPROVED",
+        "products": [
+          {
+            "name": "Surveillance Camera",
+            "model": "SC-4K",
+            "category": "Security Hardware",
+            "specs": "4K Ultra-HD Weatherproof IP Camera with IR Night Vision up to 50m"
+          }
+        ],
+        "certificates": [
+          {
+            "name": "ISO 9001",
+            "certificate_number": "ISO-REF-88442",
+            "issuing_body": "TUV Certification Agency",
+            "issue_date": "2020-05-21",
+            "valid_until": "2025-05-20",
+            "reference_file": "apex_iso_9001.pdf",
+            "status": "ACTIVE"
+          }
+        ],
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "apex_gst_certificate.pdf",
+            "verified": true
+          }
+        ],
+        "experience_years": 8,
+        "eligibility_status": "COMPLIANT",
+        "_id": "f8ef4af5-956e-4b0a-9258-14cb202db82f"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "Apex Global Solutions Ltd",
+          "reference": "Apex Global Solutions Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "27AAACA9999P1Z3",
+          "reference": "27AAACA9999P1Z3",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "L98765MH2015PLC654321",
+          "reference": "L98765MH2015PLC654321",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "Not specified",
+          "reference": "REG-MH-2015-4412",
+          "status": "REQUIRES REVIEW",
+          "explanation": "Distinct registration number not explicitly listed; verified via CIN/GSTIN.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "Missing",
+          "reference": "8 Years",
+          "status": "MISSING",
+          "explanation": "No experience declaration found in submitted tender bid.",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Surveillance Camera",
+          "category": "Products",
+          "submitted": "Surveillance Camera",
+          "reference": "Surveillance Camera",
+          "status": "MATCH",
+          "explanation": "Product 'Surveillance Camera' is approved in organization reference catalog.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO999999",
+          "reference": "ISO-REF-88442",
+          "status": "MISMATCH",
+          "explanation": "Certificate number MISMATCH: Submitted 'ISO999999' vs Trusted Reference 'ISO-REF-88442'.",
+          "source_document": "Apex_Global_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2024-01-01",
+          "reference": "2025-05-20",
+          "status": "EXPIRED",
+          "explanation": "Submitted certificate expired on 2024-01-01. Action required: renewal verification.",
+          "source_document": "Apex_Global_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: apex_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "Apex_Global_ISO_Certificate.pdf",
+          "reference_file": "apex_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO999999",
+              "reference": "ISO-REF-88442",
+              "status": "MISMATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "Apex Global Solutions Ltd",
+              "reference": "Apex Global Solutions Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2024-01-01",
+              "reference": "2025-05-20",
+              "status": "EXPIRED"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 9,
+        "matched": 4,
+        "mismatched": 1,
+        "missing": 2,
+        "expired": 1,
+        "review": 1,
+        "overall_status": "NON-COMPLIANT (DISCREPANCIES DETECTED)"
+      },
+      "ai_summary": "**Audit Summary: AUDIT-APEX-MISMATCH-0920**\n\nThis bid verification for Apex Global Solutions Ltd, comprising 9 checked items, revealed significant compliance gaps despite four initial matches. While the Company Legal Name, GSTIN, CIN, and Product information aligned with reference data, critical discrepancies were identified. Specifically, the ISO 9001 Certificate Number was mismatched, its validity date was found to be expired, and mandatory documentation including the GST Certificate and Years of Experience were entirely missing. Additionally, the Registration Number was unspecified, requiring further review. Due to these substantial inconsistencies and missing critical mandatory information, this bid unequivocally requires manual officer scrutiny and is not suitable for immediate clearance."
+    },
+    "summary_stats": {
+      "total": 9,
+      "matched": 4,
+      "mismatched": 1,
+      "missing": 2,
+      "expired": 1,
+      "review": 1,
+      "overall_status": "NON-COMPLIANT (DISCREPANCIES DETECTED)"
+    },
+    "ai_summary": "**Audit Summary: AUDIT-APEX-MISMATCH-0920**\n\nThis bid verification for Apex Global Solutions Ltd, comprising 9 checked items, revealed significant compliance gaps despite four initial matches. While the Company Legal Name, GSTIN, CIN, and Product information aligned with reference data, critical discrepancies were identified. Specifically, the ISO 9001 Certificate Number was mismatched, its validity date was found to be expired, and mandatory documentation including the GST Certificate and Years of Experience were entirely missing. Additionally, the Registration Number was unspecified, requiring further review. Due to these substantial inconsistencies and missing critical mandatory information, this bid unequivocally requires manual officer scrutiny and is not suitable for immediate clearance.",
+    "report_file": "AUDIT-APEX-MISMATCH-0920_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "6164cd8e-e419-46f5-93a6-c238977ae2c8",
+    "audit_id": "AUDIT-2026-1096Eo",
+    "tender_id": "TNDR-2026-IT-0040",
+    "tender_title": "Procuremen",
+    "company_name": "and principal business details",
+    "gstin": "29BBEPA7421R1ZA",
+    "cin": "U72900KA2022PTC165432",
+    "products": [],
+    "certificates": [],
+    "technical_details": {},
+    "experience_years": 0,
+    "uploaded_documents": [
+      {
+        "filename": "GeM_Decision_Support_Audit_GEM-2026-B8979.pdf",
+        "original_name": "GeM_Decision_Support_Audit_GEM-2026-B8979.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\6164cd8e-e419-46f5-93a6-c238977ae2c8\\GeM_Decision_Support_Audit_GEM-2026-B8979.pdf",
+        "size": 6740
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T12:16:14.224689",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 12:16:14",
+    "_id": "1f22f0ab-6f3e-4503-b516-1b7960f46d32",
+    "verification_result": {
+      "identified": false,
+      "company_name": "and principal business details",
+      "reference_company": null,
+      "identifier_used": null,
+      "field_results": [
+        {
+          "field": "Company Identification",
+          "category": "Identity",
+          "submitted": "and principal business details",
+          "reference": "NOT IN REFERENCE REPOSITORY",
+          "status": "NOT FOUND",
+          "explanation": "Reference company not found \u2014 manual review required.",
+          "source_document": "GeM_Decision_Support_Audit_GEM-2026-B8979.pdf",
+          "is_exact": false
+        }
+      ],
+      "cert_comparisons": [],
+      "summary_stats": {
+        "total": 1,
+        "matched": 0,
+        "mismatched": 0,
+        "missing": 0,
+        "expired": 0,
+        "not_found": 1,
+        "review": 1,
+        "overall_status": "MANUAL REVIEW REQUIRED"
+      },
+      "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review."
+    },
+    "summary_stats": {
+      "total": 1,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0,
+      "expired": 0,
+      "not_found": 1,
+      "review": 1,
+      "overall_status": "MANUAL REVIEW REQUIRED"
+    },
+    "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review.",
+    "report_file": "AUDIT-2026-1096Eo_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "733259bb-47e9-405e-9688-f41b3f6240fb",
+    "audit_id": "AUDIT-2026-132CD0",
+    "tender_id": "TNDR-2026-IT-0049",
+    "tender_title": "Procurement of Industrial Routers",
+    "company_name": "Chennai Embedded Systems Private Limited",
+    "gstin": "33CCESA8312K1ZP",
+    "cin": "U72900TN2023PTC176543",
+    "products": [
+      {
+        "name": "Embedded Monitoring Product Family",
+        "model": null,
+        "category": "Embedded Systems, Industrial IoT",
+        "specs": "The bidder is the OEM for its offered embedded monitoring product family. Business activity includes embedded systems, firmware development, industrial IoT and electronics engineering services."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "Udyam Registration",
+        "certificate_number": "UDYAM-TN-02-0098765",
+        "issuing_body": null,
+        "valid_until": null,
+        "company_name_on_cert": "Chennai Embedded Systems Private Limited"
+      },
+      {
+        "name": "Startup India Recognition",
+        "certificate_number": null,
+        "issuing_body": null,
+        "valid_until": null,
+        "company_name_on_cert": "Chennai Embedded Systems Private Limited"
+      },
+      {
+        "name": "GST Registration",
+        "certificate_number": "33CCESA8312K1ZP",
+        "issuing_body": null,
+        "valid_until": null,
+        "company_name_on_cert": "Chennai Embedded Systems Private Limited"
+      },
+      {
+        "name": "PAN Card",
+        "certificate_number": "CCESA8312K",
+        "issuing_body": null,
+        "valid_until": null,
+        "company_name_on_cert": "Chennai Embedded Systems Private Limited"
+      },
+      {
+        "name": "Certificate of Incorporation",
+        "certificate_number": "U72900TN2023PTC176543",
+        "issuing_body": null,
+        "valid_until": null,
+        "company_name_on_cert": "Chennai Embedded Systems Private Limited"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": null,
+      "ports": null,
+      "power": null,
+      "summary": "Provider of embedded systems, firmware development, industrial IoT and electronics engineering services. Declares satisfaction of tender financial and technical requirements, with relevant project experience and delivery commitments."
+    },
+    "experience_years": null,
+    "uploaded_documents": [
+      {
+        "filename": "Chennai_Embedded_Systems_Correct_Input.pdf",
+        "original_name": "Chennai_Embedded_Systems_Correct_Input.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\733259bb-47e9-405e-9688-f41b3f6240fb\\Chennai_Embedded_Systems_Correct_Input.pdf",
+        "size": 29946
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T12:17:12.547923",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 12:17:12",
+    "_id": "a5ff0714-de34-4296-8b20-3c78b3290354",
+    "verification_result": {
+      "identified": false,
+      "company_name": "Bharat Precision Automation Private Limited",
+      "reference_company": null,
+      "identifier_used": null,
+      "field_results": [
+        {
+          "field": "Company Identification",
+          "category": "Identity",
+          "submitted": "Bharat Precision Automation Private Limited",
+          "reference": "NOT IN REFERENCE REPOSITORY",
+          "status": "NOT FOUND",
+          "explanation": "Reference company not found \u2014 manual review required.",
+          "source_document": "Sample_Bid_One_Mistake.pdf",
+          "is_exact": false
+        }
+      ],
+      "cert_comparisons": [],
+      "summary_stats": {
+        "total": 1,
+        "matched": 0,
+        "mismatched": 0,
+        "missing": 0,
+        "expired": 0,
+        "not_found": 1,
+        "review": 1,
+        "overall_status": "MANUAL REVIEW REQUIRED"
+      },
+      "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review."
+    },
+    "summary_stats": {
+      "total": 1,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0,
+      "expired": 0,
+      "not_found": 1,
+      "review": 1,
+      "overall_status": "MANUAL REVIEW REQUIRED"
+    },
+    "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review.",
+    "report_file": "AUDIT-2026-132CD0_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "b5e464d4-9360-495b-baef-480d930ddd1f",
+    "audit_id": "AUDIT-2026-132CD0",
+    "tender_id": "TNDR-2026-IT-0049",
+    "tender_title": "Procurement of Industrial Router",
+    "company_name": "Bharat Precision Automation Private Limited",
+    "gstin": "29BBEPA7421R1ZA",
+    "cin": "U72900KA2022PTC165432",
+    "products": [],
+    "certificates": [
+      {
+        "name": "GST Registration",
+        "certificate_number": "29BBEPA7421R1ZA",
+        "issuing_body": null,
+        "valid_until": "active",
+        "company_name_on_cert": null
+      },
+      {
+        "name": "Udyam Registration",
+        "certificate_number": "UDYAM-KA-05-0087654",
+        "issuing_body": null,
+        "valid_until": "active",
+        "company_name_on_cert": null
+      },
+      {
+        "name": "PAN Registration",
+        "certificate_number": "BBEPA7421R",
+        "issuing_body": null,
+        "valid_until": null,
+        "company_name_on_cert": null
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": null,
+      "ports": null,
+      "power": null,
+      "summary": null
+    },
+    "experience_years": null,
+    "uploaded_documents": [
+      {
+        "filename": "Sample_Bid_One_Mistake.pdf",
+        "original_name": "Sample_Bid_One_Mistake.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\b5e464d4-9360-495b-baef-480d930ddd1f\\Sample_Bid_One_Mistake.pdf",
+        "size": 29737
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T12:18:25.795575",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 12:18:25",
+    "_id": "268384c3-c264-4d18-89c0-a6b8fc843387",
+    "": {
+      "verification_result": {
+        "identified": false,
+        "company_name": "Bharat Precision Automation Private Limited",
+        "reference_company": {},
+        "identifier_used": null,
+        "field_results": [
+          {
+            "field": "Company Identification",
+            "category": "Identity",
+            "submitted": "Bharat Precision Automation Private Limited",
+            "reference": "NOT IN REFERENCE REPOSITORY",
+            "status": "NOT FOUND",
+            "explanation": "Reference company not found \u2014 manual review required.",
+            "source_document": "Uploaded Submission",
+            "is_exact": false
+          }
+        ],
+        "cert_comparisons": [],
+        "summary_stats": {
+          "total": 1,
+          "matched": 0,
+          "mismatched": 0,
+          "missing": 0,
+          "expired": 0,
+          "not_found": 1,
+          "review": 1,
+          "overall_status": "MANUAL REVIEW REQUIRED"
+        },
+        "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review."
+      },
+      "summary_stats": {
+        "total": 1,
+        "matched": 0,
+        "mismatched": 0,
+        "missing": 0,
+        "expired": 0,
+        "not_found": 1,
+        "review": 1,
+        "overall_status": "MANUAL REVIEW REQUIRED"
+      },
+      "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review.",
+      "report_file": "AUDIT-2026-132CD0_compliance_report.pdf",
+      "status": "COMPLETED"
+    }
+  },
+  {
+    "submission_id": "e437a380-a2d0-4edd-a3c4-3624dd5c51f3",
+    "audit_id": "AUDIT-TEST-LIVE-001",
+    "tender_id": "TNDR-2026-TEST",
+    "tender_title": "Test Bid Hardware",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": "Industrial Networking Hardware",
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001:2015",
+        "certificate_number": "ISO123456",
+        "issuing_body": "Global Quality Registrar (GQR)",
+        "valid_until": "2027-08-15",
+        "company_name_on_cert": "ABC Technologies Pvt Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": "-10\u00b0C to 60\u00b0C",
+      "ports": "5 Gigabit Ethernet Ports",
+      "power": "dual 9-36V DC redundant power input",
+      "summary": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+    },
+    "experience_years": 5,
+    "uploaded_documents": [
+      {
+        "filename": "ABC_Tech_Bid_Submission.pdf",
+        "original_name": "ABC_Tech_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\e437a380-a2d0-4edd-a3c4-3624dd5c51f3\\ABC_Tech_Bid_Submission.pdf",
+        "size": 2990
+      },
+      {
+        "filename": "ABC_Tech_ISO_Certificate.pdf",
+        "original_name": "ABC_Tech_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\e437a380-a2d0-4edd-a3c4-3624dd5c51f3\\ABC_Tech_ISO_Certificate.pdf",
+        "size": 2210
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T12:28:37.797368",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 12:28:37",
+    "_id": "d651d425-bbe8-4675-ab9a-a298367f35a8",
+    "verification_result": {
+      "identified": true,
+      "company_name": "ABC Technologies Pvt Ltd",
+      "reference_company": {
+        "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6",
+        "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+        "certificates": [
+          {
+            "certificate_number": "ISO123456",
+            "issue_date": "2022-08-16",
+            "issuing_body": "Global Quality Registrar (GQR)",
+            "name": "ISO 9001",
+            "reference_file": "abc_iso_9001.pdf",
+            "status": "ACTIVE",
+            "valid_until": "2027-08-15"
+          }
+        ],
+        "cin": "U12345TN2020PTC123456",
+        "company_id": "COMP-001",
+        "company_name": "ABC Technologies Pvt Ltd",
+        "contact_email": "tenders@abctechnologies.com",
+        "contact_phone": "+91-44-28394012",
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "abc_gst_certificate.pdf",
+            "verified": true
+          },
+          {
+            "name": "Technical Specification Sheet",
+            "reference_file": "abc_tech_spec.pdf",
+            "verified": true
+          }
+        ],
+        "eligibility_status": "COMPLIANT",
+        "experience_years": 5,
+        "gstin": "33ABCDE1234F1Z5",
+        "products": [
+          {
+            "category": "Networking",
+            "model": "IR-500",
+            "name": "Industrial Router",
+            "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+          },
+          {
+            "category": "Networking",
+            "model": "NS-24G",
+            "name": "Network Switch",
+            "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+          }
+        ],
+        "registration_number": "REG-TN-2020-0981",
+        "status": "APPROVED"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "ABC Technologies Pvt Ltd",
+          "reference": "ABC Technologies Pvt Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "33ABCDE1234F1Z5",
+          "reference": "33ABCDE1234F1Z5",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "U12345TN2020PTC123456",
+          "reference": "U12345TN2020PTC123456",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "REG-TN-2020-0981",
+          "reference": "REG-TN-2020-0981",
+          "status": "MATCH",
+          "explanation": "Registration numbers match exactly.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "5 Years",
+          "reference": "5 Years",
+          "status": "MATCH",
+          "explanation": "Submitted experience of 5 years satisfies requirement (5 years registered).",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Industrial Router",
+          "category": "Products",
+          "submitted": "Industrial Router",
+          "reference": "Industrial Router",
+          "status": "MATCH",
+          "explanation": "Product 'Industrial Router' is approved in organization reference catalog.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Industrial Router)",
+          "category": "Specifications",
+          "submitted": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input.",
+          "reference": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (HIGH): The submitted specification aligns perfectly with the trusted reference; 'dual' explicitly clarifies how the required redundant power input is implemented, not adding a contradictory or different core capability.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "Product: Network Switch",
+          "category": "Products",
+          "submitted": "NOT OFFERED IN BID",
+          "reference": "Network Switch",
+          "status": "MISSING",
+          "explanation": "Required catalog product 'Network Switch' was not detected in vendor submission.",
+          "source_document": "Bid Submission",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO123456",
+          "reference": "ISO123456",
+          "status": "MATCH",
+          "explanation": "Certificate numbers match exactly (ISO123456).",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2027-08-15",
+          "reference": "2027-08-15",
+          "status": "MATCH",
+          "explanation": "Validity dates match (2027-08-15) and certificate is currently ACTIVE.",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        },
+        {
+          "field": "Document: Technical Specification Sheet",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_tech_spec.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'Technical Specification Sheet' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "ABC_Tech_ISO_Certificate.pdf",
+          "reference_file": "abc_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO123456",
+              "reference": "ISO123456",
+              "status": "MATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "ABC Technologies Pvt Ltd",
+              "reference": "ABC Technologies Pvt Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2027-08-15",
+              "reference": "2027-08-15",
+              "status": "MATCH"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 12,
+        "matched": 9,
+        "mismatched": 0,
+        "missing": 3,
+        "expired": 0,
+        "review": 0,
+        "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+      },
+      "ai_summary": "**Audit Summary: Bid Verification for ABC Technologies Pvt Ltd (AUDIT-TEST-LIVE-001)**\n\nThe bid verification audit for ABC Technologies Pvt Ltd (AUDIT-TEST-LIVE-001) found a substantial alignment of submitted data with reference details across the 12 checked items. Key organizational details, including company legal name, GSTIN, CIN, registration number, years of experience, and the specifications for the Industrial Router, were successfully matched. However, critical discrepancies were identified: the \"Network Switch\" product was marked as \"NOT OFFERED IN BID,\" and two mandatory documents, the GST Certificate and Technical Specification Sheet, were explicitly missing as \"Document not uploaded.\" Due to the absence of these mandatory documents and a key product offering, this bid requires immediate manual officer scrutiny before clearance."
+    },
+    "summary_stats": {
+      "total": 12,
+      "matched": 9,
+      "mismatched": 0,
+      "missing": 3,
+      "expired": 0,
+      "review": 0,
+      "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+    },
+    "ai_summary": "**Audit Summary: Bid Verification for ABC Technologies Pvt Ltd (AUDIT-TEST-LIVE-001)**\n\nThe bid verification audit for ABC Technologies Pvt Ltd (AUDIT-TEST-LIVE-001) found a substantial alignment of submitted data with reference details across the 12 checked items. Key organizational details, including company legal name, GSTIN, CIN, registration number, years of experience, and the specifications for the Industrial Router, were successfully matched. However, critical discrepancies were identified: the \"Network Switch\" product was marked as \"NOT OFFERED IN BID,\" and two mandatory documents, the GST Certificate and Technical Specification Sheet, were explicitly missing as \"Document not uploaded.\" Due to the absence of these mandatory documents and a key product offering, this bid requires immediate manual officer scrutiny before clearance.",
+    "report_file": "AUDIT-TEST-LIVE-001_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "a5f28994-8343-4168-86e9-1f74010647c8",
+    "audit_id": "AUDIT-APEX-MISMATCH-3316",
+    "tender_id": "TNDR-2026-SEC-0112",
+    "tender_title": "Municipal Security & Surveillance Equipment",
+    "company_name": "Apex Global Solutions Ltd",
+    "gstin": "27AAACA9999P1Z3",
+    "cin": "L98765MH2015PLC654321",
+    "products": [
+      {
+        "name": "Surveillance Camera",
+        "model": "SC-4K",
+        "category": "Municipal Security Equipment",
+        "specs": null
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001",
+        "certificate_number": "ISO999999",
+        "issuing_body": null,
+        "valid_until": "2024-01-01",
+        "company_name_on_cert": "Apex Global Solutions Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": null,
+      "ports": null,
+      "power": null,
+      "summary": "Technical bid for Municipal Security Equipment, offering Surveillance Camera SC-4K."
+    },
+    "experience_years": null,
+    "uploaded_documents": [
+      {
+        "filename": "Apex_Global_Bid_Submission.pdf",
+        "original_name": "Apex_Global_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\a5f28994-8343-4168-86e9-1f74010647c8\\Apex_Global_Bid_Submission.pdf",
+        "size": 2797
+      },
+      {
+        "filename": "Apex_Global_ISO_Certificate.pdf",
+        "original_name": "Apex_Global_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\a5f28994-8343-4168-86e9-1f74010647c8\\Apex_Global_ISO_Certificate.pdf",
+        "size": 2085
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T13:33:29.934150",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 13:33:29",
+    "_id": "afb96d6e-bb33-492a-9e2d-11ff64fc3010",
+    "verification_result": {
+      "identified": true,
+      "company_name": "Apex Global Solutions Ltd",
+      "reference_company": {
+        "_id": "f8ef4af5-956e-4b0a-9258-14cb202db82f",
+        "address": "1204 Nariman Point, Mumbai, Maharashtra 400021",
+        "certificates": [
+          {
+            "certificate_number": "ISO-REF-88442",
+            "issue_date": "2020-05-21",
+            "issuing_body": "TUV Certification Agency",
+            "name": "ISO 9001",
+            "reference_file": "apex_iso_9001.pdf",
+            "status": "ACTIVE",
+            "valid_until": "2025-05-20"
+          }
+        ],
+        "cin": "L98765MH2015PLC654321",
+        "company_id": "COMP-002",
+        "company_name": "Apex Global Solutions Ltd",
+        "contact_email": "compliance@apexglobal.in",
+        "contact_phone": "+91-22-67891234",
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "apex_gst_certificate.pdf",
+            "verified": true
+          }
+        ],
+        "eligibility_status": "COMPLIANT",
+        "experience_years": 8,
+        "gstin": "27AAACA9999P1Z3",
+        "products": [
+          {
+            "category": "Security Hardware",
+            "model": "SC-4K",
+            "name": "Surveillance Camera",
+            "specs": "4K Ultra-HD Weatherproof IP Camera with IR Night Vision up to 50m"
+          }
+        ],
+        "registration_number": "REG-MH-2015-4412",
+        "status": "APPROVED"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "Apex Global Solutions Ltd",
+          "reference": "Apex Global Solutions Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "27AAACA9999P1Z3",
+          "reference": "27AAACA9999P1Z3",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "L98765MH2015PLC654321",
+          "reference": "L98765MH2015PLC654321",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "Not specified",
+          "reference": "REG-MH-2015-4412",
+          "status": "REQUIRES REVIEW",
+          "explanation": "Distinct registration number not explicitly listed; verified via CIN/GSTIN.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "Missing",
+          "reference": "8 Years",
+          "status": "MISSING",
+          "explanation": "No experience declaration found in submitted tender bid.",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Surveillance Camera",
+          "category": "Products",
+          "submitted": "Surveillance Camera",
+          "reference": "Surveillance Camera",
+          "status": "MATCH",
+          "explanation": "Product 'Surveillance Camera' is approved in organization reference catalog.",
+          "source_document": "Apex_Global_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO999999",
+          "reference": "ISO-REF-88442",
+          "status": "MISMATCH",
+          "explanation": "Certificate number MISMATCH: Submitted 'ISO999999' vs Trusted Reference 'ISO-REF-88442'.",
+          "source_document": "Apex_Global_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2024-01-01",
+          "reference": "2025-05-20",
+          "status": "EXPIRED",
+          "explanation": "Submitted certificate expired on 2024-01-01. Action required: renewal verification.",
+          "source_document": "Apex_Global_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: apex_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "Apex_Global_ISO_Certificate.pdf",
+          "reference_file": "apex_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO999999",
+              "reference": "ISO-REF-88442",
+              "status": "MISMATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "Apex Global Solutions Ltd",
+              "reference": "Apex Global Solutions Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2024-01-01",
+              "reference": "2025-05-20",
+              "status": "EXPIRED"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 9,
+        "matched": 4,
+        "mismatched": 1,
+        "missing": 2,
+        "expired": 1,
+        "review": 1,
+        "overall_status": "NON-COMPLIANT (DISCREPANCIES DETECTED)"
+      },
+      "ai_summary": "**Audit Summary: Bid Verification for Apex Global Solutions Ltd**\n\nAudit ID AUDIT-APEX-MISMATCH-3316 for Apex Global Solutions Ltd involved the verification of 9 bid submission points, where 4 items matched, but significant discrepancies and missing information were identified across the remaining aspects. Specifically, the Company Legal Name, GSTIN, CIN, and Product details were confirmed as consistent with reference data. However, critical discrepancies include a mismatch in the ISO 9001 Certificate Number, an expired ISO 9001 Validity Date, missing 'Years of Experience,' and the absence of the mandatory GST Certificate; the 'Registration Number' also requires further investigation due to a 'Not specified' submission. Due to these substantial issues and missing mandatory documentation, this bid is not suitable for immediate clearance and requires manual officer scrutiny for a comprehensive compliance assessment."
+    },
+    "summary_stats": {
+      "total": 9,
+      "matched": 4,
+      "mismatched": 1,
+      "missing": 2,
+      "expired": 1,
+      "review": 1,
+      "overall_status": "NON-COMPLIANT (DISCREPANCIES DETECTED)"
+    },
+    "ai_summary": "**Audit Summary: Bid Verification for Apex Global Solutions Ltd**\n\nAudit ID AUDIT-APEX-MISMATCH-3316 for Apex Global Solutions Ltd involved the verification of 9 bid submission points, where 4 items matched, but significant discrepancies and missing information were identified across the remaining aspects. Specifically, the Company Legal Name, GSTIN, CIN, and Product details were confirmed as consistent with reference data. However, critical discrepancies include a mismatch in the ISO 9001 Certificate Number, an expired ISO 9001 Validity Date, missing 'Years of Experience,' and the absence of the mandatory GST Certificate; the 'Registration Number' also requires further investigation due to a 'Not specified' submission. Due to these substantial issues and missing mandatory documentation, this bid is not suitable for immediate clearance and requires manual officer scrutiny for a comprehensive compliance assessment.",
+    "report_file": "AUDIT-APEX-MISMATCH-3316_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "351f6bf4-633b-469d-970b-0a674f20c26c",
+    "audit_id": "AUDIT-ABC-MATCH-3319",
+    "tender_id": "TNDR-2026-IT-0049",
+    "tender_title": "Supply of Industrial Networking Hardware",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": "Industrial Networking Hardware",
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001:2015",
+        "certificate_number": "ISO123456",
+        "issuing_body": "Global Quality Registrar (GQR)",
+        "valid_until": "2027-08-15",
+        "company_name_on_cert": "ABC Technologies Pvt Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": "-10\u00b0C to 60\u00b0C",
+      "ports": "5 Gigabit Ethernet Ports",
+      "power": "dual 9-36V DC redundant power input",
+      "summary": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+    },
+    "experience_years": 5,
+    "uploaded_documents": [
+      {
+        "filename": "ABC_Tech_Bid_Submission.pdf",
+        "original_name": "ABC_Tech_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\351f6bf4-633b-469d-970b-0a674f20c26c\\ABC_Tech_Bid_Submission.pdf",
+        "size": 2990
+      },
+      {
+        "filename": "ABC_Tech_ISO_Certificate.pdf",
+        "original_name": "ABC_Tech_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\351f6bf4-633b-469d-970b-0a674f20c26c\\ABC_Tech_ISO_Certificate.pdf",
+        "size": 2210
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T13:33:35.415438",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 13:33:35",
+    "_id": "07896413-aabf-474a-b9f5-f0ec8d4d0358",
+    "verification_result": {
+      "identified": true,
+      "company_name": "ABC Technologies Pvt Ltd",
+      "reference_company": {
+        "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6",
+        "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+        "certificates": [
+          {
+            "certificate_number": "ISO123456",
+            "issue_date": "2022-08-16",
+            "issuing_body": "Global Quality Registrar (GQR)",
+            "name": "ISO 9001",
+            "reference_file": "abc_iso_9001.pdf",
+            "status": "ACTIVE",
+            "valid_until": "2027-08-15"
+          }
+        ],
+        "cin": "U12345TN2020PTC123456",
+        "company_id": "COMP-001",
+        "company_name": "ABC Technologies Pvt Ltd",
+        "contact_email": "tenders@abctechnologies.com",
+        "contact_phone": "+91-44-28394012",
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "abc_gst_certificate.pdf",
+            "verified": true
+          },
+          {
+            "name": "Technical Specification Sheet",
+            "reference_file": "abc_tech_spec.pdf",
+            "verified": true
+          }
+        ],
+        "eligibility_status": "COMPLIANT",
+        "experience_years": 5,
+        "gstin": "33ABCDE1234F1Z5",
+        "products": [
+          {
+            "category": "Networking",
+            "model": "IR-500",
+            "name": "Industrial Router",
+            "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+          },
+          {
+            "category": "Networking",
+            "model": "NS-24G",
+            "name": "Network Switch",
+            "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+          }
+        ],
+        "registration_number": "REG-TN-2020-0981",
+        "status": "APPROVED"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "ABC Technologies Pvt Ltd",
+          "reference": "ABC Technologies Pvt Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "33ABCDE1234F1Z5",
+          "reference": "33ABCDE1234F1Z5",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "U12345TN2020PTC123456",
+          "reference": "U12345TN2020PTC123456",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "REG-TN-2020-0981",
+          "reference": "REG-TN-2020-0981",
+          "status": "MATCH",
+          "explanation": "Registration numbers match exactly.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "5 Years",
+          "reference": "5 Years",
+          "status": "MATCH",
+          "explanation": "Submitted experience of 5 years satisfies requirement (5 years registered).",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Industrial Router",
+          "category": "Products",
+          "submitted": "Industrial Router",
+          "reference": "Industrial Router",
+          "status": "MATCH",
+          "explanation": "Product 'Industrial Router' is approved in organization reference catalog.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Industrial Router)",
+          "category": "Specifications",
+          "submitted": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input.",
+          "reference": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (HIGH): The submitted specification provides a more detailed description of the power input ('dual') that is entirely consistent with and elaborates on the 'Redundant Power' requirement in the reference, while other parameters are identical.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "Product: Network Switch",
+          "category": "Products",
+          "submitted": "NOT OFFERED IN BID",
+          "reference": "Network Switch",
+          "status": "MISSING",
+          "explanation": "Required catalog product 'Network Switch' was not detected in vendor submission.",
+          "source_document": "Bid Submission",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO123456",
+          "reference": "ISO123456",
+          "status": "MATCH",
+          "explanation": "Certificate numbers match exactly (ISO123456).",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2027-08-15",
+          "reference": "2027-08-15",
+          "status": "MATCH",
+          "explanation": "Validity dates match (2027-08-15) and certificate is currently ACTIVE.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        },
+        {
+          "field": "Document: Technical Specification Sheet",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_tech_spec.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'Technical Specification Sheet' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "ABC_Tech_Bid_Submission.pdf",
+          "reference_file": "abc_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO123456",
+              "reference": "ISO123456",
+              "status": "MATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "ABC Technologies Pvt Ltd",
+              "reference": "ABC Technologies Pvt Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2027-08-15",
+              "reference": "2027-08-15",
+              "status": "MATCH"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 12,
+        "matched": 9,
+        "mismatched": 0,
+        "missing": 3,
+        "expired": 0,
+        "review": 0,
+        "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+      },
+      "ai_summary": "**Audit Summary: AUDIT-ABC-MATCH-3319**\n\nThe bid verification for ABC Technologies Pvt Ltd (AUDIT-ABC-MATCH-3319) indicates a strong alignment across several key data points, with 9 out of 12 checked items successfully matched. Vendor legal name, tax identifiers (GSTIN, CIN), registration number, years of experience, and core product (Industrial Router) specifications, alongside ISO 9001 certification details, all precisely matched the reference data.\n\nHowever, three items were identified as missing. Notably, the Network Switch product was not offered in the bid, and more critically, two mandatory documents \u2013 the GST Certificate and the Technical Specification Sheet \u2013 were not uploaded by the vendor.\n\nDue to the absence of these mandatory compliance documents, this bid **requires immediate manual officer scrutiny** before any clearance can be considered."
+    },
+    "summary_stats": {
+      "total": 12,
+      "matched": 9,
+      "mismatched": 0,
+      "missing": 3,
+      "expired": 0,
+      "review": 0,
+      "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+    },
+    "ai_summary": "**Audit Summary: AUDIT-ABC-MATCH-3319**\n\nThe bid verification for ABC Technologies Pvt Ltd (AUDIT-ABC-MATCH-3319) indicates a strong alignment across several key data points, with 9 out of 12 checked items successfully matched. Vendor legal name, tax identifiers (GSTIN, CIN), registration number, years of experience, and core product (Industrial Router) specifications, alongside ISO 9001 certification details, all precisely matched the reference data.\n\nHowever, three items were identified as missing. Notably, the Network Switch product was not offered in the bid, and more critically, two mandatory documents \u2013 the GST Certificate and the Technical Specification Sheet \u2013 were not uploaded by the vendor.\n\nDue to the absence of these mandatory compliance documents, this bid **requires immediate manual officer scrutiny** before any clearance can be considered.",
+    "report_file": "AUDIT-ABC-MATCH-3319_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "ba84f4b0-c3d5-4fda-80bb-5ac2a1df4394",
+    "audit_id": "AUDIT-2026-59C365",
+    "tender_id": "TNDR-2026-GEN-01",
+    "tender_title": "General Procurement Bid",
+    "company_name": "Chennai Embedded Systems Private Limited",
+    "gstin": "33CCESA8312K1ZP",
+    "cin": "U72900TN2023PTC176543",
+    "products": [],
+    "certificates": [],
+    "technical_details": {},
+    "experience_years": 0,
+    "uploaded_documents": [
+      {
+        "filename": "Chennai_Embedded_Systems_Correct_Input.pdf",
+        "original_name": "Chennai_Embedded_Systems_Correct_Input.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\ba84f4b0-c3d5-4fda-80bb-5ac2a1df4394\\Chennai_Embedded_Systems_Correct_Input.pdf",
+        "size": 29946
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T14:05:20.551835",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 14:05:20",
+    "_id": "236ec298-6bf4-48b0-a05b-9ac72a25b400",
+    "verification_result": {
+      "identified": false,
+      "company_name": "Chennai Embedded Systems Private Limited",
+      "reference_company": {},
+      "identifier_used": null,
+      "field_results": [
+        {
+          "field": "Company Identification",
+          "category": "Identity",
+          "submitted": "Chennai Embedded Systems Private Limited",
+          "reference": "NOT IN REFERENCE REPOSITORY",
+          "status": "NOT FOUND",
+          "explanation": "Reference company not found \u2014 manual review required.",
+          "source_document": "Chennai_Embedded_Systems_Correct_Input.pdf",
+          "is_exact": false
+        }
+      ],
+      "cert_comparisons": [],
+      "summary_stats": {
+        "total": 1,
+        "matched": 0,
+        "mismatched": 0,
+        "missing": 0,
+        "expired": 0,
+        "not_found": 1,
+        "review": 1,
+        "overall_status": "MANUAL REVIEW REQUIRED"
+      },
+      "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review."
+    },
+    "summary_stats": {
+      "total": 1,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0,
+      "expired": 0,
+      "not_found": 1,
+      "review": 1,
+      "overall_status": "MANUAL REVIEW REQUIRED"
+    },
+    "ai_summary": "The submitted documents could not be matched with any authorized organization in the trusted company reference database. As per compliance protocols, reference company not found requires mandatory manual officer review.",
+    "report_file": "AUDIT-2026-59C365_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "2ad46daa-ec97-4599-b494-4b6a023951ea",
+    "audit_id": "AUDIT-2026-B7A946",
+    "tender_id": "TNDR-2026-GEN-01",
+    "tender_title": "General Procurement Bid",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": null,
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C; 5 Gigabit Ethernet Ports; 9-36V DC Redundant Power."
+      },
+      {
+        "name": "Network Switch",
+        "model": "NS-24G",
+        "category": null,
+        "specs": "24 Port Managed Gigabit Switch; Layer 3 Routing."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001 Certificate",
+        "certificate_number": "ISO123456",
+        "issuing_body": null,
+        "valid_until": "2027-08-15",
+        "company_name_on_cert": null
+      },
+      {
+        "name": "GST Certificate",
+        "certificate_number": "\u2014",
+        "issuing_body": null,
+        "valid_until": "Associated reference document",
+        "company_name_on_cert": null
+      },
+      {
+        "name": "Technical Specification Sheet",
+        "certificate_number": "\u2014",
+        "issuing_body": null,
+        "valid_until": "Associated reference document",
+        "company_name_on_cert": null
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": "from -10\u00b0C to 60\u00b0C",
+      "ports": "5 Gigabit Ethernet Ports; 24 Port Managed Gigabit Switch",
+      "power": "9-36V DC Redundant Power",
+      "summary": "Industrial Router (IR-500) features operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, and 9-36V DC Redundant Power. Network Switch (NS-24G) is a 24 Port Managed Gigabit Switch with Layer 3 Routing capability."
+    },
+    "experience_years": 5,
+    "uploaded_documents": [
+      {
+        "filename": "COMP-001_Company_Reference_Data_Sheet.pdf",
+        "original_name": "COMP-001_Company_Reference_Data_Sheet.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\2ad46daa-ec97-4599-b494-4b6a023951ea\\COMP-001_Company_Reference_Data_Sheet.pdf",
+        "size": 38843
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T16:17:21.271252",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 16:17:21",
+    "_id": "9faba636-f80e-40e0-861b-e18977e0ecc6",
+    "verification_result": {
+      "identified": true,
+      "company_name": "ABC Technologies Pvt Ltd",
+      "reference_company": {
+        "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6",
+        "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+        "certificates": [
+          {
+            "certificate_number": "ISO123456",
+            "issue_date": "2022-08-16",
+            "issuing_body": "Global Quality Registrar (GQR)",
+            "name": "ISO 9001",
+            "reference_file": "abc_iso_9001.pdf",
+            "status": "ACTIVE",
+            "valid_until": "2027-08-15"
+          }
+        ],
+        "cin": "U12345TN2020PTC123456",
+        "company_id": "COMP-001",
+        "company_name": "ABC Technologies Pvt Ltd",
+        "contact_email": "tenders@abctechnologies.com",
+        "contact_phone": "+91-44-28394012",
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "abc_gst_certificate.pdf",
+            "verified": true
+          },
+          {
+            "name": "Technical Specification Sheet",
+            "reference_file": "abc_tech_spec.pdf",
+            "verified": true
+          }
+        ],
+        "eligibility_status": "COMPLIANT",
+        "experience_years": 5,
+        "gstin": "33ABCDE1234F1Z5",
+        "products": [
+          {
+            "category": "Networking",
+            "model": "IR-500",
+            "name": "Industrial Router",
+            "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+          },
+          {
+            "category": "Networking",
+            "model": "NS-24G",
+            "name": "Network Switch",
+            "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+          }
+        ],
+        "registration_number": "REG-TN-2020-0981",
+        "status": "APPROVED"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "ABC Technologies Pvt Ltd",
+          "reference": "ABC Technologies Pvt Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "33ABCDE1234F1Z5",
+          "reference": "33ABCDE1234F1Z5",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "U12345TN2020PTC123456",
+          "reference": "U12345TN2020PTC123456",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "REG-TN-2020-0981",
+          "reference": "REG-TN-2020-0981",
+          "status": "MATCH",
+          "explanation": "Registration numbers match exactly.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "5 Years",
+          "reference": "5 Years",
+          "status": "MATCH",
+          "explanation": "Submitted experience of 5 years satisfies requirement (5 years registered).",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Industrial Router",
+          "category": "Products",
+          "submitted": "Industrial Router",
+          "reference": "Industrial Router",
+          "status": "MATCH",
+          "explanation": "Product 'Industrial Router' is approved in organization reference catalog.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Industrial Router)",
+          "category": "Specifications",
+          "submitted": "Operating temperature from -10\u00b0C to 60\u00b0C; 5 Gigabit Ethernet Ports; 9-36V DC Redundant Power.",
+          "reference": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (EXACT): Exact semantic match between submitted specification and reference standard.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "Product: Network Switch",
+          "category": "Products",
+          "submitted": "Network Switch",
+          "reference": "Network Switch",
+          "status": "MATCH",
+          "explanation": "Product 'Network Switch' is approved in organization reference catalog.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Network Switch)",
+          "category": "Specifications",
+          "submitted": "24 Port Managed Gigabit Switch; Layer 3 Routing.",
+          "reference": "24 Port Managed Gigabit Switch, Layer 3 Routing",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (EXACT): Exact semantic match between submitted specification and reference standard.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO123456",
+          "reference": "ISO123456",
+          "status": "MATCH",
+          "explanation": "Certificate numbers match exactly (ISO123456).",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2027-08-15",
+          "reference": "2027-08-15",
+          "status": "MATCH",
+          "explanation": "Validity dates match (2027-08-15) and certificate is currently ACTIVE.",
+          "source_document": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        },
+        {
+          "field": "Document: Technical Specification Sheet",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_tech_spec.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'Technical Specification Sheet' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "COMP-001_Company_Reference_Data_Sheet.pdf",
+          "reference_file": "abc_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO123456",
+              "reference": "ISO123456",
+              "status": "MATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "ABC Technologies Pvt Ltd",
+              "reference": "ABC Technologies Pvt Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2027-08-15",
+              "reference": "2027-08-15",
+              "status": "MATCH"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 13,
+        "matched": 11,
+        "mismatched": 0,
+        "missing": 2,
+        "expired": 0,
+        "review": 0,
+        "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+      },
+      "ai_summary": "**Audit Summary: AUDIT-2026-B7A946 - ABC Technologies Pvt Ltd**\n\nThis bid verification for ABC Technologies Pvt Ltd reveals strong alignment across most submitted credentials, with 11 out of 13 checked items matching reference data. Key identification details, including Company Legal Name, GSTIN, CIN, and Registration Number, along with Years of Experience, product descriptions, technical specifications for both Industrial Router and Network Switch, and ISO 9001 certification details (number and validity), were all successfully verified. However, the audit identified two critical discrepancies: the mandatory GST Certificate and Technical Specification Sheet documents were not uploaded. Due to the absence of these essential mandatory documents, this bid requires immediate manual officer scrutiny before any clearance can be considered."
+    },
+    "summary_stats": {
+      "total": 13,
+      "matched": 11,
+      "mismatched": 0,
+      "missing": 2,
+      "expired": 0,
+      "review": 0,
+      "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+    },
+    "ai_summary": "**Audit Summary: AUDIT-2026-B7A946 - ABC Technologies Pvt Ltd**\n\nThis bid verification for ABC Technologies Pvt Ltd reveals strong alignment across most submitted credentials, with 11 out of 13 checked items matching reference data. Key identification details, including Company Legal Name, GSTIN, CIN, and Registration Number, along with Years of Experience, product descriptions, technical specifications for both Industrial Router and Network Switch, and ISO 9001 certification details (number and validity), were all successfully verified. However, the audit identified two critical discrepancies: the mandatory GST Certificate and Technical Specification Sheet documents were not uploaded. Due to the absence of these essential mandatory documents, this bid requires immediate manual officer scrutiny before any clearance can be considered.",
+    "report_file": "AUDIT-2026-B7A946_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "7ff13543-b539-4ac6-abdb-f44ec2f0a2f4",
+    "audit_id": "AUDIT-ABC-MATCH-3419",
+    "tender_id": "TNDR-2026-IT-0049",
+    "tender_title": "Supply of Industrial Networking Hardware",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": "Industrial Networking Hardware",
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001:2015",
+        "certificate_number": "ISO123456",
+        "issuing_body": "Global Quality Registrar (GQR)",
+        "valid_until": "2027-08-15",
+        "company_name_on_cert": "ABC Technologies Pvt Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": "-10\u00b0C to 60\u00b0C",
+      "ports": "5 Gigabit Ethernet Ports",
+      "power": "dual 9-36V DC redundant power input",
+      "summary": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+    },
+    "experience_years": 5,
+    "uploaded_documents": [
+      {
+        "filename": "ABC_Tech_Bid_Submission.pdf",
+        "original_name": "ABC_Tech_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\7ff13543-b539-4ac6-abdb-f44ec2f0a2f4\\ABC_Tech_Bid_Submission.pdf",
+        "size": 2990
+      },
+      {
+        "filename": "ABC_Tech_ISO_Certificate.pdf",
+        "original_name": "ABC_Tech_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\7ff13543-b539-4ac6-abdb-f44ec2f0a2f4\\ABC_Tech_ISO_Certificate.pdf",
+        "size": 2210
+      }
+    ],
+    "extraction_timestamp": "2026-09-26T16:34:29.958803",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-26 16:34:29",
+    "_id": "b77b640c-11a3-4aef-a375-d7675dc98260",
+    "verification_result": {
+      "identified": true,
+      "company_name": "ABC Technologies Pvt Ltd",
+      "reference_company": {
+        "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6",
+        "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+        "certificates": [
+          {
+            "certificate_number": "ISO123456",
+            "issue_date": "2022-08-16",
+            "issuing_body": "Global Quality Registrar (GQR)",
+            "name": "ISO 9001",
+            "reference_file": "abc_iso_9001.pdf",
+            "status": "ACTIVE",
+            "valid_until": "2027-08-15"
+          }
+        ],
+        "cin": "U12345TN2020PTC123456",
+        "company_id": "COMP-001",
+        "company_name": "ABC Technologies Pvt Ltd",
+        "contact_email": "tenders@abctechnologies.com",
+        "contact_phone": "+91-44-28394012",
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "abc_gst_certificate.pdf",
+            "verified": true
+          },
+          {
+            "name": "Technical Specification Sheet",
+            "reference_file": "abc_tech_spec.pdf",
+            "verified": true
+          }
+        ],
+        "eligibility_status": "COMPLIANT",
+        "experience_years": 5,
+        "gstin": "33ABCDE1234F1Z5",
+        "products": [
+          {
+            "category": "Networking",
+            "model": "IR-500",
+            "name": "Industrial Router",
+            "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+          },
+          {
+            "category": "Networking",
+            "model": "NS-24G",
+            "name": "Network Switch",
+            "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+          }
+        ],
+        "registration_number": "REG-TN-2020-0981",
+        "status": "APPROVED"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "ABC Technologies Pvt Ltd",
+          "reference": "ABC Technologies Pvt Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "33ABCDE1234F1Z5",
+          "reference": "33ABCDE1234F1Z5",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "U12345TN2020PTC123456",
+          "reference": "U12345TN2020PTC123456",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "REG-TN-2020-0981",
+          "reference": "REG-TN-2020-0981",
+          "status": "MATCH",
+          "explanation": "Registration numbers match exactly.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "5 Years",
+          "reference": "5 Years",
+          "status": "MATCH",
+          "explanation": "Submitted experience of 5 years satisfies requirement (5 years registered).",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Industrial Router",
+          "category": "Products",
+          "submitted": "Industrial Router",
+          "reference": "Industrial Router",
+          "status": "MATCH",
+          "explanation": "Product 'Industrial Router' is approved in organization reference catalog.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Industrial Router)",
+          "category": "Specifications",
+          "submitted": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input.",
+          "reference": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (HIGH): The term \"dual\" in the submitted specification clarifies the common implementation of \"Redundant Power\" as having two inputs, which is inherently implied by the concept of redundancy for DC power in this context, and thus does not introduce a fundamentally different requirement.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "Product: Network Switch",
+          "category": "Products",
+          "submitted": "NOT OFFERED IN BID",
+          "reference": "Network Switch",
+          "status": "MISSING",
+          "explanation": "Required catalog product 'Network Switch' was not detected in vendor submission.",
+          "source_document": "Bid Submission",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO123456",
+          "reference": "ISO123456",
+          "status": "MATCH",
+          "explanation": "Certificate numbers match exactly (ISO123456).",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2027-08-15",
+          "reference": "2027-08-15",
+          "status": "MATCH",
+          "explanation": "Validity dates match (2027-08-15) and certificate is currently ACTIVE.",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        },
+        {
+          "field": "Document: Technical Specification Sheet",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_tech_spec.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'Technical Specification Sheet' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "ABC_Tech_ISO_Certificate.pdf",
+          "reference_file": "abc_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO123456",
+              "reference": "ISO123456",
+              "status": "MATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "ABC Technologies Pvt Ltd",
+              "reference": "ABC Technologies Pvt Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2027-08-15",
+              "reference": "2027-08-15",
+              "status": "MATCH"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 12,
+        "matched": 9,
+        "mismatched": 0,
+        "missing": 3,
+        "expired": 0,
+        "review": 0,
+        "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+      },
+      "ai_summary": "**Audit Summary: Bid Verification - AUDIT-ABC-MATCH-3419**\n\nThe audit for ABC Technologies Pvt Ltd (AUDIT-ABC-MATCH-3419) confirmed a strong alignment in numerous areas, with 9 out of 12 items successfully matched. Key details such as company legal name, tax identification (GSTIN, CIN), registration number, years of experience, Industrial Router product offering, its technical specifications, and ISO 9001 certification were all found to match reference data. However, critical discrepancies were identified: the mandatory Network Switch product was explicitly not offered in the bid, and two mandatory documents \u2013 the GST Certificate and the Technical Specification Sheet \u2013 were not uploaded. Due to these significant omissions of mandatory products and documentation, this bid **requires immediate manual officer scrutiny** to determine its eligibility."
+    },
+    "summary_stats": {
+      "total": 12,
+      "matched": 9,
+      "mismatched": 0,
+      "missing": 3,
+      "expired": 0,
+      "review": 0,
+      "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+    },
+    "ai_summary": "**Audit Summary: Bid Verification - AUDIT-ABC-MATCH-3419**\n\nThe audit for ABC Technologies Pvt Ltd (AUDIT-ABC-MATCH-3419) confirmed a strong alignment in numerous areas, with 9 out of 12 items successfully matched. Key details such as company legal name, tax identification (GSTIN, CIN), registration number, years of experience, Industrial Router product offering, its technical specifications, and ISO 9001 certification were all found to match reference data. However, critical discrepancies were identified: the mandatory Network Switch product was explicitly not offered in the bid, and two mandatory documents \u2013 the GST Certificate and the Technical Specification Sheet \u2013 were not uploaded. Due to these significant omissions of mandatory products and documentation, this bid **requires immediate manual officer scrutiny** to determine its eligibility.",
+    "report_file": "AUDIT-ABC-MATCH-3419_compliance_report.pdf",
+    "status": "COMPLETED"
+  },
+  {
+    "submission_id": "bc717be0-28c2-4239-8385-fe0a0d93159e",
+    "audit_id": "TEST-AUDIT-001",
+    "tender_id": "TNDR-2026-IT-001",
+    "tender_title": "Cloud Infrastructure Upgrade",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456",
+    "products": [
+      {
+        "name": "Industrial Router",
+        "model": "IR-500",
+        "category": "Industrial Networking Hardware",
+        "specs": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "ISO 9001:2015",
+        "certificate_number": "ISO123456",
+        "issuing_body": "Global Quality Registrar (GQR)",
+        "valid_until": "2027-08-15",
+        "company_name_on_cert": "ABC Technologies Pvt Ltd"
+      }
+    ],
+    "technical_details": {
+      "operating_temperature": "-10\u00b0C to 60\u00b0C",
+      "ports": "5 Gigabit Ethernet Ports",
+      "power": "dual 9-36V DC redundant power input",
+      "summary": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input."
+    },
+    "experience_years": 5,
+    "uploaded_documents": [
+      {
+        "filename": "ABC_Tech_Bid_Submission.pdf",
+        "original_name": "ABC_Tech_Bid_Submission.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\bc717be0-28c2-4239-8385-fe0a0d93159e\\ABC_Tech_Bid_Submission.pdf",
+        "size": 2990
+      },
+      {
+        "filename": "ABC_Tech_ISO_Certificate.pdf",
+        "original_name": "ABC_Tech_ISO_Certificate.pdf",
+        "path": "C:\\Users\\Risanth.S\\OneDrive\\Documents\\Project veribid\\main_audit_app\\uploads\\bc717be0-28c2-4239-8385-fe0a0d93159e\\ABC_Tech_ISO_Certificate.pdf",
+        "size": 2210
+      }
+    ],
+    "extraction_timestamp": "2026-09-27T08:51:17.125035",
+    "extraction_status": "EXTRACTED",
+    "created_at": "2026-09-27 08:51:17",
+    "_id": "432efddb-f42c-41b1-9936-b3b98b604e33",
+    "verification_result": {
+      "identified": true,
+      "company_name": "ABC Technologies Pvt Ltd",
+      "reference_company": {
+        "_id": "fcba5a14-8ccf-418f-af07-f44f11f2afa6",
+        "address": "Plot 42, Electronics City Phase 1, Chennai, Tamil Nadu 600001",
+        "certificates": [
+          {
+            "certificate_number": "ISO123456",
+            "issue_date": "2022-08-16",
+            "issuing_body": "Global Quality Registrar (GQR)",
+            "name": "ISO 9001",
+            "reference_file": "abc_iso_9001.pdf",
+            "status": "ACTIVE",
+            "valid_until": "2027-08-15"
+          }
+        ],
+        "cin": "U12345TN2020PTC123456",
+        "company_id": "COMP-001",
+        "company_name": "ABC Technologies Pvt Ltd",
+        "contact_email": "tenders@abctechnologies.com",
+        "contact_phone": "+91-44-28394012",
+        "documents": [
+          {
+            "name": "GST Certificate",
+            "reference_file": "abc_gst_certificate.pdf",
+            "verified": true
+          },
+          {
+            "name": "Technical Specification Sheet",
+            "reference_file": "abc_tech_spec.pdf",
+            "verified": true
+          }
+        ],
+        "eligibility_status": "COMPLIANT",
+        "experience_years": 5,
+        "gstin": "33ABCDE1234F1Z5",
+        "products": [
+          {
+            "category": "Networking",
+            "model": "IR-500",
+            "name": "Industrial Router",
+            "specs": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power"
+          },
+          {
+            "category": "Networking",
+            "model": "NS-24G",
+            "name": "Network Switch",
+            "specs": "24 Port Managed Gigabit Switch, Layer 3 Routing"
+          }
+        ],
+        "registration_number": "REG-TN-2020-0981",
+        "status": "APPROVED"
+      },
+      "identifier_used": "GSTIN",
+      "field_results": [
+        {
+          "field": "Company Legal Name",
+          "category": "Company Details",
+          "submitted": "ABC Technologies Pvt Ltd",
+          "reference": "ABC Technologies Pvt Ltd",
+          "status": "MATCH",
+          "explanation": "Exact match between submitted vendor name and registered company record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "GSTIN (Tax ID)",
+          "category": "Company Details",
+          "submitted": "33ABCDE1234F1Z5",
+          "reference": "33ABCDE1234F1Z5",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: GSTIN values match exactly (15 alphanumeric characters).",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "CIN (Corporate Identity)",
+          "category": "Company Details",
+          "submitted": "U12345TN2020PTC123456",
+          "reference": "U12345TN2020PTC123456",
+          "status": "MATCH",
+          "explanation": "Deterministic verification: CIN matches Ministry of Corporate Affairs reference record.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Registration Number",
+          "category": "Company Details",
+          "submitted": "REG-TN-2020-0981",
+          "reference": "REG-TN-2020-0981",
+          "status": "MATCH",
+          "explanation": "Registration numbers match exactly.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Years of Experience",
+          "category": "Eligibility",
+          "submitted": "5 Years",
+          "reference": "5 Years",
+          "status": "MATCH",
+          "explanation": "Submitted experience of 5 years satisfies requirement (5 years registered).",
+          "source_document": "Experience / Bid Summary",
+          "is_exact": true
+        },
+        {
+          "field": "Product: Industrial Router",
+          "category": "Products",
+          "submitted": "Industrial Router",
+          "reference": "Industrial Router",
+          "status": "MATCH",
+          "explanation": "Product 'Industrial Router' is approved in organization reference catalog.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Tech Specs (Industrial Router)",
+          "category": "Specifications",
+          "submitted": "Operating temperature from -10\u00b0C to 60\u00b0C with 5 Gigabit Ethernet Ports and dual 9-36V DC redundant power input.",
+          "reference": "Operating temperature from -10\u00b0C to 60\u00b0C, 5 Gigabit Ethernet Ports, 9-36V DC Redundant Power",
+          "status": "MATCH",
+          "explanation": "AI Semantic Analysis (HIGH): The submitted specification's 'dual' power input explicitly defines a common method for achieving 'Redundant Power', thereby fully satisfying the trusted reference specification without introducing new, conflicting, or unmet requirements.",
+          "source_document": "ABC_Tech_Bid_Submission.pdf",
+          "is_exact": false
+        },
+        {
+          "field": "Product: Network Switch",
+          "category": "Products",
+          "submitted": "NOT OFFERED IN BID",
+          "reference": "Network Switch",
+          "status": "MISSING",
+          "explanation": "Required catalog product 'Network Switch' was not detected in vendor submission.",
+          "source_document": "Bid Submission",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Certificate Number",
+          "category": "Certifications",
+          "submitted": "ISO123456",
+          "reference": "ISO123456",
+          "status": "MATCH",
+          "explanation": "Certificate numbers match exactly (ISO123456).",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "ISO 9001 Validity Date",
+          "category": "Certifications",
+          "submitted": "2027-08-15",
+          "reference": "2027-08-15",
+          "status": "MATCH",
+          "explanation": "Validity dates match (2027-08-15) and certificate is currently ACTIVE.",
+          "source_document": "ABC_Tech_ISO_Certificate.pdf",
+          "is_exact": true
+        },
+        {
+          "field": "Document: GST Certificate",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_gst_certificate.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'GST Certificate' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        },
+        {
+          "field": "Document: Technical Specification Sheet",
+          "category": "Required Documents",
+          "submitted": "Document not uploaded",
+          "reference": "Mandatory Archive File: abc_tech_spec.pdf",
+          "status": "MISSING",
+          "explanation": "Reference document 'Technical Specification Sheet' is designated in registry but missing from bid submission.",
+          "source_document": "Officer Document Package",
+          "is_exact": true
+        }
+      ],
+      "cert_comparisons": [
+        {
+          "certificate_name": "ISO 9001",
+          "submitted_file": "ABC_Tech_ISO_Certificate.pdf",
+          "reference_file": "abc_iso_9001.pdf",
+          "checks": [
+            {
+              "property": "Certificate Number",
+              "submitted": "ISO123456",
+              "reference": "ISO123456",
+              "status": "MATCH"
+            },
+            {
+              "property": "Company Name on Cert",
+              "submitted": "ABC Technologies Pvt Ltd",
+              "reference": "ABC Technologies Pvt Ltd",
+              "status": "MATCH"
+            },
+            {
+              "property": "Certificate Validity",
+              "submitted": "2027-08-15",
+              "reference": "2027-08-15",
+              "status": "MATCH"
+            }
+          ]
+        }
+      ],
+      "summary_stats": {
+        "total": 12,
+        "matched": 9,
+        "mismatched": 0,
+        "missing": 3,
+        "expired": 0,
+        "review": 0,
+        "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+      },
+      "ai_summary": "**Audit Summary: Bid Verification for ABC Technologies Pvt Ltd (Audit ID: TEST-AUDIT-001)**\n\nThis bid verification for ABC Technologies Pvt Ltd indicates a substantial but incomplete alignment with required criteria. Core vendor identification details, including Company Legal Name, GSTIN, CIN, Registration Number, Years of Experience, and specific details for the Industrial Router product (including its technical specifications and associated ISO 9001 Certificate Number and Validity Date), were successfully matched against reference data.\n\nHowever, critical discrepancies require immediate attention: the Network Switch product was explicitly noted as \"NOT OFFERED IN BID,\" and more significantly, two mandatory documents\u2014the GST Certificate and the Technical Specification Sheet\u2014were not uploaded. These missing mandatory archive files represent a significant compliance gap.\n\nGiven the absence of these essential mandatory documents, this bid is unequivocally not suitable for clearance at this stage and requires immediate manual officer scrutiny to determine the impact of these missing submissions and next steps for compliance."
+    },
+    "summary_stats": {
+      "total": 12,
+      "matched": 9,
+      "mismatched": 0,
+      "missing": 3,
+      "expired": 0,
+      "review": 0,
+      "overall_status": "CONDITIONAL / OFFICER REVIEW REQUIRED"
+    },
+    "ai_summary": "**Audit Summary: Bid Verification for ABC Technologies Pvt Ltd (Audit ID: TEST-AUDIT-001)**\n\nThis bid verification for ABC Technologies Pvt Ltd indicates a substantial but incomplete alignment with required criteria. Core vendor identification details, including Company Legal Name, GSTIN, CIN, Registration Number, Years of Experience, and specific details for the Industrial Router product (including its technical specifications and associated ISO 9001 Certificate Number and Validity Date), were successfully matched against reference data.\n\nHowever, critical discrepancies require immediate attention: the Network Switch product was explicitly noted as \"NOT OFFERED IN BID,\" and more significantly, two mandatory documents\u2014the GST Certificate and the Technical Specification Sheet\u2014were not uploaded. These missing mandatory archive files represent a significant compliance gap.\n\nGiven the absence of these essential mandatory documents, this bid is unequivocally not suitable for clearance at this stage and requires immediate manual officer scrutiny to determine the impact of these missing submissions and next steps for compliance.",
+    "report_file": "TEST-AUDIT-001_compliance_report.pdf",
+    "status": "COMPLETED"
+  }
+]

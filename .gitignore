@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.db
+uploads/*
+!uploads/.gitkeep
+reports/*
+!reports/.gitkeep
+node_modules/
+dist/
+.pytest_cache/

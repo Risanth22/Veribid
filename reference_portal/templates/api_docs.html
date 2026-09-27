@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}Reference REST API Documentation{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3">
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+    <div>
+      <h4 class="fw-bold mb-0">Company Reference REST API</h4>
+      <small class="text-muted">HTTP endpoints exposed by the Reference System and consumed by the Main Audit Application.</small>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <!-- Endpoints List -->
+    <div class="col-lg-7">
+      <!-- Architecture note -->
+      <div class="alert alert-secondary py-2 px-3 small mb-3">
+        <strong>Data Flow Architecture:</strong> <code>Main Audit Application &rarr; REST API (Port 5001) &rarr; Reference Database</code>
+      </div>
+
+      <!-- Endpoint 1 -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center py-2">
+          <div>
+            <span class="badge bg-success me-1">GET</span>
+            <code>/api/reference/companies</code>
+          </div>
+          <button class="btn btn-outline-secondary btn-sm py-0 px-2" onclick="testEndpoint('/api/reference/companies')">Test</button>
+        </div>
+        <div class="card-body p-2 small">
+          <p class="text-muted mb-2">Lists all trusted reference companies. Supports query parameter <code>?q=search_term</code>.</p>
+          <div class="code-box">
+{
+  "count": 2,
+  "data": [...],
+  "success": true
+}
+          </div>
+        </div>
+      </div>
+
+      <!-- Endpoint 2 -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center py-2">
+          <div>
+            <span class="badge bg-success me-1">GET</span>
+            <code>/api/reference/company/{identifier}</code>
+          </div>
+          <button class="btn btn-outline-secondary btn-sm py-0 px-2" onclick="testEndpoint('/api/reference/company/33ABCDE1234F1Z5')">Test (GSTIN)</button>
+        </div>
+        <div class="card-body p-2 small">
+          <p class="text-muted mb-2">Fetches trusted company records by GSTIN, CIN, company_id, or name.</p>
+          <div class="code-box">
+{
+  "data": {
+    "company_id": "COMP-001",
+    "company_name": "ABC Technologies Pvt Ltd",
+    "gstin": "33ABCDE1234F1Z5",
+    "cin": "U12345TN2020PTC123456"
+  },
+  "source": "gstin",
+  "success": true
+}
+          </div>
+        </div>
+      </div>
+
+      <!-- Endpoint 3 -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center py-2">
+          <div>
+            <span class="badge bg-success me-1">GET</span>
+            <code>/api/reference/company/{company_id}/certificates</code>
+          </div>
+          <button class="btn btn-outline-secondary btn-sm py-0 px-2" onclick="testEndpoint('/api/reference/company/COMP-001/certificates')">Test</button>
+        </div>
+        <div class="card-body p-2 small">
+          <p class="text-muted mb-0">Returns trusted certificates metadata for the specified company.</p>
+        </div>
+      </div>
+
+      <!-- Endpoint 4 -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center py-2">
+          <div>
+            <span class="badge bg-success me-1">GET</span>
+            <code>/api/reference/company/{company_id}/documents</code>
+          </div>
+          <button class="btn btn-outline-secondary btn-sm py-0 px-2" onclick="testEndpoint('/api/reference/company/COMP-001/documents')">Test</button>
+        </div>
+        <div class="card-body p-2 small">
+          <p class="text-muted mb-0">Returns list of registered reference files and paths.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Test Console -->
+    <div class="col-lg-5">
+      <div class="card sticky-top" style="top: 15px;">
+        <div class="card-header py-2 d-flex justify-content-between align-items-center">
+          <span>API Test Console</span>
+          <span id="status-code" class="badge bg-secondary">-</span>
+        </div>
+        <div class="card-body p-3">
+          <div class="input-group input-group-sm mb-2">
+            <span class="input-group-text">URL</span>
+            <input type="text" id="custom-url" class="form-control font-monospace" value="/api/reference/company/COMP-001">
+            <button class="btn btn-primary" onclick="testEndpoint(document.getElementById('custom-url').value)">Send</button>
+          </div>
+          <pre id="console-output" class="code-box mb-0" style="height: 380px; max-height: 420px; font-size: 0.8rem;">// Click 'Test' on any endpoint above to view live response.</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function testEndpoint(url) {
+  document.getElementById('custom-url').value = url;
+  const output = document.getElementById('console-output');
+  const statusBadge = document.getElementById('status-code');
+  output.textContent = 'Loading...';
+  statusBadge.textContent = '...';
+  statusBadge.className = 'badge bg-secondary';
+
+  fetch(url)
+    .then(async res => {
+      const data = await res.json();
+      statusBadge.textContent = res.status + ' ' + res.statusText;
+      statusBadge.className = res.ok ? 'badge bg-success' : 'badge bg-danger';
+      output.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch(err => {
+      statusBadge.textContent = 'ERR';
+      statusBadge.className = 'badge bg-danger';
+      output.textContent = 'Error: ' + err.message;
+    });
+}
+</script>
+{% endblock %}

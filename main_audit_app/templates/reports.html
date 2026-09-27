@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Reports | VeriBid{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3">
+  <!-- Page Header -->
+  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-2 border-bottom">
+    <div>
+      <h4 class="fw-bold mb-0" data-i18n="reports_title">Generated Compliance Reports</h4>
+      <small class="text-muted" data-i18n="reports_subtitle">Downloadable PDF audit dossiers.</small>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table table-hover table-bordered mb-0">
+        <thead>
+          <tr>
+            <th data-i18n="th_report_file">Report File</th>
+            <th data-i18n="th_company_name">Company Name</th>
+            <th data-i18n="th_tender_ref">Tender Ref</th>
+            <th data-i18n="th_status">Status</th>
+            <th data-i18n="th_generated_date">Generated Date</th>
+            <th class="text-end" data-i18n="th_download">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if audits %}
+            {% for a in audits %}
+              {% set stats = a.get('summary_stats', {}) %}
+              <tr>
+                <td>
+                  <i class="fa-solid fa-file-pdf text-danger me-1"></i>
+                  <span class="font-monospace fw-semibold">{{ a.audit_id }}_compliance_report.pdf</span>
+                </td>
+                <td>{{ a.company_name or 'Unidentified Vendor' }}</td>
+                <td><code>{{ a.tender_id or 'General' }}</code></td>
+                <td>
+                  {% set st = stats.get('overall_status', 'COMPLETED') if stats else 'COMPLETED' %}
+                  {% if 'COMPLIANT' in st and 'NON' not in st %}
+                    <span class="badge bg-success">COMPLIANT</span>
+                  {% elif 'NON' in st or (stats and stats.get('mismatched', 0) > 0) %}
+                    <span class="badge bg-danger">DISCREPANCY</span>
+                  {% else %}
+                    <span class="badge bg-warning text-dark">REVIEW</span>
+                  {% endif %}
+                </td>
+                <td class="text-muted small">{{ a.created_at }}</td>
+                <td class="text-end">
+                  <a href="{{ url_for('audit_ui.download_report', audit_id=a.audit_id) }}" class="btn btn-outline-danger btn-sm py-0 px-2">
+                    <i class="fa-solid fa-download me-1"></i> PDF
+                  </a>
+                </td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr>
+              <td colspan="6" class="text-center py-4 text-muted">No reports generated yet.</td>
+            </tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
