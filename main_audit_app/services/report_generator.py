@@ -90,8 +90,9 @@ def generate_pdf_report(submission_record, verification_result):
 
     story = []
 
-    # 1. Header Block with Logo
-    logo_path = BASE_DIR / "main_audit_app" / "static" / "img" / "logo.jpg"
+    logo_path = BASE_DIR / "main_audit_app" / "static" / "img" / "veribid_logo.png"
+    if not logo_path.exists():
+        logo_path = BASE_DIR / "main_audit_app" / "static" / "img" / "logo.jpg"
     if logo_path.exists():
         try:
             from reportlab.platypus import Image as RLImage
